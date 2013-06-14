@@ -1,0 +1,20 @@
+{
+  "name": "rhrn.github.io",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "connect": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rhrn/rhrn.github.io.git"
+  },
+  "author": "@rhrn",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "847acd8c4d6c0a65f6529e6cb7b5b2cfc1348e71",
+  "devDependencies": {
+    "grunt-contrib-watch": "latest",
+    "grunt-jade-tasks": "latest"
+  }
+}
