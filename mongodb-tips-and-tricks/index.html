@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home &mdash; @rhrn</title>
+    <title>Mongodb - tips and tricks &mdash; @rhrn</title>
     <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width">
@@ -12,11 +12,15 @@
       <div class="span8 offset2"><a href="/"><img src="/static/img/rhrn-github-io-qr.png"></a></div>
     </div>
     <div class="row-fluid content">
-      <div class="span8 offset2"><h4>Posts</h4>
-<p><a href="git-tips-and-tricks">Git tips and tricks</a>  </p>
-<p><a href="vim-tips-and-tricks">Vim tips and tricks</a>  </p>
-<p><a href="mongodb-tips-and-tricks">Mongodb tips and tricks</a>  </p>
-<p><a href="handling-github-pages-with-jade-and-markdown">Handling GitHub pages with jade and markdown</a></p>
+      <div class="span8 offset2"><h3>Mongodb tips and tricks</h3>
+<h4>Shell</h4>
+<ul>
+<li>Copy document from another database<pre><code>use dev_db;
+var prod_db = db.getSiblingDB(&#39;prod_db&#39;);
+var doc = prod_db.collection.findOne(ObjectId(&#39;52dea749eb05fdab0a4ca902&#39;));
+db.collection.insert(doc);</code></pre>
+</li>
+</ul>
 
       </div>
     </div>
