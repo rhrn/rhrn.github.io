@@ -9,3 +9,7 @@
 [Mongodb tips and tricks](mongodb-tips-and-tricks)  
 
 [Handling GitHub pages with jade and markdown](handling-github-pages-with-jade-and-markdown)
+
+[About me](resume)  
+
+[About me [russian]](resume-ru)  
