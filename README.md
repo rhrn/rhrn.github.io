@@ -10,6 +10,12 @@
 
 [Handling GitHub pages with jade and markdown](handling-github-pages-with-jade-and-markdown)
 
-[About me](resume)  
+#### Demos
 
-[About me [russian]](resume-ru)  
+[3D flip card (css3)](demos/css3-flip-card)  
+
+#### About me
+
+[Resume](resume)  
+
+[Резюме](resume-ru)  
