@@ -137,9 +137,12 @@ git rm --cached filename
 git rm -r --cached directoryname
 ```
 
-* Show origin
+* Work with remote origins
 ```
-git remote show origin
+git remote -v # show origins
+git remote add `origin-name` `git@github.com:user/repo.git` # add origin
+git remote set-url `origin-name` `git@github.com:user/repo.git` # set origin url
+git remote rm `origin-name` # remove origin
 ```
 
 #### Submodules

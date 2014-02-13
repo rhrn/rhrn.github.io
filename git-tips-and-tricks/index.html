@@ -106,8 +106,11 @@ git show origin/branch:file.txt &gt; file.txt</code></pre>
 <pre><code>git rm --cached filename
 git rm -r --cached directoryname</code></pre>
 </li>
-<li><p>Show origin</p>
-<pre><code>git remote show origin</code></pre>
+<li><p>Work with remote origins</p>
+<pre><code>git remote -v # show origins
+git remote add `origin-name` `git@github.com:user/repo.git` # add origin
+git remote set-url `origin-name` `git@github.com:user/repo.git` # set origin url
+git remote rm `origin-name` # remove origin</code></pre>
 </li>
 </ul>
 <h4>Submodules</h4>
