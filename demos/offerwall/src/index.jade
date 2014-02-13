@@ -1,0 +1,66 @@
+doctype html
+html(ng-app="app")
+
+  head
+
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    link(rel="stylesheet" href="bower_components/flat-ui-official/bootstrap/css/bootstrap.css")
+    link(rel="stylesheet" href="bower_components/flat-ui-official/css/flat-ui.css")
+    link(rel="stylesheet" href="css/app.css")
+
+  body
+
+    .container(ng-controller="offerwallController")
+      .header.row(ng-show="show.currencies || show.providers")
+        .col-xs-6
+          a.btn.btn-block.btn-lg.btn-primary(href="#currencies" ng-class="{'btn-inverse': show.currencies}")
+            i.glyphicon.glyphicon-euro
+            |  Currencies
+        .col-xs-6
+          a.btn.btn-block.btn-lg.btn-primary(href="#providers", ng-class="{'btn-inverse': show.providers}")
+            i.glyphicon.glyphicon-download
+            |  Providers
+      .header.row(ng-show="show.offers")
+        .col-xs-6
+          .btn.btn-block.btn-lg.btn-primary(ng-click="goBack()")
+            i.glyphicon.glyphicon-arrow-left 
+            |  Back
+        .col-xs-6.offer-info
+          span.currency(ng-if="offer.currency") {{offer.currency.name}}
+          span.provider(ng-if="offer.provider") {{offer.provider.name}}
+      .body.row(ng-show="show.currencies")
+        .col-xs-12.currencies(ng-repeat="currency in currencies")
+          .col-xs-6
+            a.btn.btn-sm.btn-default.name(href="#/offers/{{currency.id}}/0")
+              | {{currency.name}}
+          .col-xs-6.providers
+            span.provider(ng-repeat="provider in getProviders(currency.provider)")
+              | {{provider.name}}
+      .body.row(ng-show="show.providers")
+        .col-xs-12.providers(ng-repeat="provider in providers")
+          .col-xs-6
+            .name {{provider.name}}
+          .col-xs-6.currencies
+            a.btn.btn-sm.btn-default(ng-repeat="currency in getCurrencies(provider.currency)", href="#/offers/{{currency.id}}/{{provider.id}}")
+              | {{currency.name}}
+
+      .body.row(ng-show="show.offers")
+        .col-xs-12.offers(ng-repeat="offer in offers")
+          .col-xs-8
+            a.offer(target="_blank" href="{{offer.url}}") {{offer.name}}
+            .description {{offer.description}}
+          .col-xs-4
+            .btn.btn-lg.btn-info.reward {{offer.reward}}
+
+
+    script(src="bower_components/angular/angular.min.js")
+    script(src="bower_components/angular-route/angular-route.min.js")
+    script(src="bower_components/angular-resource/angular-resource.min.js")
+    script(src="bower_components/angular-animate/angular-animate.min.js")
+    script(src="js/data.js")
+    script(src="js/app.js")
+
+    include ../../../layouts/ga
+

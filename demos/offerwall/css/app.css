@@ -1,0 +1,39 @@
+.container {
+  width: 80%;
+  margin-top: 20px;
+  border: 1px solid;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  padding: 10px;
+  overflow: hidden;
+}
+.provider {
+  margin: 10px;
+}
+.btn-sm {
+  margin: 5px;
+}
+.offer-info {
+  text-align: center;
+}
+.row {
+  position: relative;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.row.ng-hide {
+  margin-left: 100%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.row.ng-hide-add,
+.row.ng-hide-remove {
+  display: block !important;
+}
