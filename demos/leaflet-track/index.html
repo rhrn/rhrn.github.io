@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css"><style type="text/css">html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 1px;
+  min-height: 100%;
+  width: 100%;
+}
+#map {
+  margin: auto;
+  height: 80%;
+  width: 90%;
+}
+#controls {
+  margin: auto;
+  width: 90%;
+}
+#track {
+  width: 100%;
+}
+</style>
+  </head>
+  <body>
+    <div id="controls">
+      <div>
+        <textarea id="track" placeholder="GeoJSON track"></textarea>
+      </div>
+      <div>
+        <input id="width" placeholder="width in meters">x
+        <input id="height" placeholder="height in meters">
+        <button id="draw">draw</button>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([51.505, -0.09], 13);
+      
+      var tracks = {}, trackLayer;
+      var button = document.getElementById('draw');
+      var track = document.getElementById('track');
+      var width = document.getElementById('width');
+      var height = document.getElementById('height');
+      var button = document.getElementById('draw');
+      
+      var trackStyle = {
+        color: '#ff0000',
+        weight: 1,
+        opacity: 1
+      };
+      
+      var pageStyle = {
+        color: '#48a9da',
+        weight: 5
+      };
+      
+      
+      var paginator = function(feature, layer) {
+        //console.log (feature, layer);
+        //var bounds = layer.getBounds();
+        //L.rectangle(bounds, pageStyle)
+          //.addTo(map);
+      };
+      
+      var getLatitudesAndLongitudes = function(latlngs, callback) {
+      
+        if (Array.isArray(latlngs)) {
+          for(var i = 0, len = latlngs.length; i < len; i+=1) {
+            getLatitudesAndLongitudes(latlngs[i], callback);
+          }
+        } else {
+          callback(latlngs);
+        }
+        
+      };
+      
+      button.addEventListener('click', function() {
+      
+        if (trackLayer !== undefined) {
+          map.removeLayer(trackLayer);
+        }
+        
+        try {
+        
+          tracks = JSON.parse(track.value);
+          
+          trackLayer = L.geoJson(tracks, {
+            style: trackStyle,
+            onEachFeature: paginator
+          }).addTo(map);
+          
+          var layers = trackLayer.getLayers(), latlngs, counter = 0;
+          for(var i = 0, len = layers.length; i < len; i+=1) {
+            latlngs = layers[i].getLatLngs();
+            getLatitudesAndLongitudes(latlngs, function(latlng) {
+              var marker = L.marker(latlng).addTo(map);
+              counter++;
+              marker.bindPopup(counter + "");
+            });
+          }
+          
+          map.fitBounds(trackLayer.getBounds());
+          
+        } catch (e) {
+          console.log('error', e.message);
+        }
+        
+      });
+      
+      L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png', {
+        maxZoom: 18
+      }).addTo(map);
+      
+    </script>
+  <script src="//localhost:8070/socket.io/socket.io.js"></script><script src="//localhost:8070/socket.io/jastyco/livereload.js"></script></body>
+</html>
