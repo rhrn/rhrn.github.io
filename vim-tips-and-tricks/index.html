@@ -12,7 +12,7 @@
       <div class="span8 offset2"><a href="/"><img src="/static/img/rhrn-github-io-qr.png"></a></div>
     </div>
     <div class="row-fluid content">
-      <div class="span8 offset2"><h4>Vim tips and tricks</h4>
+      <div class="span8 offset2"><h4 id="vim-tips-and-tricks">Vim tips and tricks</h4>
 <ul>
 <li><p>Jump between modifications<br><code>g;</code> - backward<br><code>g,</code> - forward<br><code>`.</code> - to last<br><code>&lt;Ctrl&gt;i</code> - backward through files<br><code>&lt;Ctrl&gt;o</code> - forward through files  </p>
 </li>
@@ -38,10 +38,10 @@
 </li>
 <li><p>View tabs, spaces...</p>
 <pre><code>:set list &quot;show
-:set nolist &quot;hide</code></pre>
-</li>
+:set nolist &quot;hide
+</code></pre></li>
 </ul>
-<h4>Config <code>.vimrc</code></h4>
+<h4 id="config-vimrc-">Config <code>.vimrc</code></h4>
 <ul>
 <li>Indents switch functions<ul>
 <li>Hard tabs (\t)<pre><code>function! Tabs()
@@ -49,28 +49,28 @@
   set shiftwidth=8
   set tabstop=8
   set noexpandtab
-endfunction</code></pre>
-</li>
+endfunction
+</code></pre></li>
 <li>Soft tabs (2 spaces)<pre><code>function! Spaces()
   set softtabstop=2
   set shiftwidth=2
   set tabstop=2
   set expandtab
-endfunction</code></pre>
-</li>
+endfunction
+</code></pre></li>
 <li>Usage <code>:execute Spaces()</code> and <code>:execute Tabs()</code></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li><p>Tiny search highlight</p>
-<pre><code>highlight Search ctermfg=Grey ctermbg=NONE cterm=NONE</code></pre>
-</li>
+<pre><code>highlight Search ctermfg=Grey ctermbg=NONE cterm=NONE
+</code></pre></li>
 <li><p>UTF</p>
 <pre><code>set encoding=utf-8
 set fileencoding=utf-8
-set termencoding=utf-8</code></pre>
-</li>
+set termencoding=utf-8
+</code></pre></li>
 </ul>
 
       </div>

@@ -12,127 +12,127 @@
       <div class="span8 offset2"><a href="/"><img src="/static/img/rhrn-github-io-qr.png"></a></div>
     </div>
     <div class="row-fluid content">
-      <div class="span8 offset2"><h3>Git tips and tricks</h3>
-<h4>Commits</h4>
+      <div class="span8 offset2"><h3 id="git-tips-and-tricks">Git tips and tricks</h3>
+<h4 id="commits">Commits</h4>
 <ul>
 <li><p>Show commits history</p>
 <pre><code>git log
-git log --pretty=format:&quot;%h %ad | %s%d [%an]&quot; --graph --date=short</code></pre>
-</li>
+git log --pretty=format:&quot;%h %ad | %s%d [%an]&quot; --graph --date=short
+</code></pre></li>
 <li><p>Show commit changes</p>
 <pre><code>git show `sha-commit` # sha can be shor or long
 git show 55579a5 # sha short example
-git show 55579a5e4215650c021b95bda94e76ff26d62606 # sha long example</code></pre>
-</li>
+git show 55579a5e4215650c021b95bda94e76ff26d62606 # sha long example
+</code></pre></li>
 <li><p>Show commit changed files</p>
-<pre><code>git show `sha-commit` --name-only</code></pre>
-</li>
+<pre><code>git show `sha-commit` --name-only
+</code></pre></li>
 </ul>
-<h4>Stages</h4>
+<h4 id="stages">Stages</h4>
 <ul>
 <li><p>Show stages: untracked files, changes not staged for commit, changes to be committed</p>
-<pre><code>git status</code></pre>
-</li>
+<pre><code>git status
+</code></pre></li>
 <li><p>Show current changes</p>
 <pre><code>git diff # all
-git diff filename # file</code></pre>
-</li>
+git diff filename # file
+</code></pre></li>
 <li><p>Undo file changes</p>
-<pre><code>git checkout filename</code></pre>
-</li>
+<pre><code>git checkout filename
+</code></pre></li>
 <li><p>Add changes to be commited</p>
 <pre><code>git add filename # whole file
 git add -p # partial
-git add -u # only stage the modified files</code></pre>
-</li>
+git add -u # only stage the modified files
+</code></pre></li>
 <li><p>Unstage changes</p>
 <pre><code>git reset HEAD filename # whole file
-git reset -p # partial</code></pre>
-</li>
+git reset -p # partial
+</code></pre></li>
 <li><p>Show changes will be commited</p>
-<pre><code>git diff --staged</code></pre>
-</li>
+<pre><code>git diff --staged
+</code></pre></li>
 <li><p>Create commit</p>
-<pre><code>git commit -m &quot;Commit comment&quot;</code></pre>
-</li>
+<pre><code>git commit -m &quot;Commit comment&quot;
+</code></pre></li>
 <li><p>Undo commit</p>
 <pre><code>git reset --soft HEAD^ # keep commit stage
-git reset HEAD^ # keep in not commit stage</code></pre>
-</li>
+git reset HEAD^ # keep in not commit stage
+</code></pre></li>
 <li><p>Revert commit</p>
-<pre><code>git revert `sha-commit`</code></pre>
-</li>
+<pre><code>git revert `sha-commit`
+</code></pre></li>
 <li><p>Revert file from commit</p>
-<pre><code>git show `sha-commit` -- filename | git apply -R</code></pre>
-</li>
+<pre><code>git show `sha-commit` -- filename | git apply -R
+</code></pre></li>
 </ul>
-<h4>Branches</h4>
+<h4 id="branches">Branches</h4>
 <ul>
 <li><p>Show branches</p>
 <pre><code>git branch # local
-git branch -a # with remote</code></pre>
-</li>
+git branch -a # with remote
+</code></pre></li>
 <li><p>Go into branch</p>
 <pre><code>git checkout branch-name
-git checkout - # previous brunch</code></pre>
-</li>
+git checkout - # previous brunch
+</code></pre></li>
 <li><p>Create branch from the current </p>
-<pre><code>git checkout -b feature-branch</code></pre>
-</li>
+<pre><code>git checkout -b feature-branch
+</code></pre></li>
 <li><p>Rename local branch</p>
-<pre><code>git branch -m old-branch-name new-brach-name</code></pre>
-</li>
+<pre><code>git branch -m old-branch-name new-brach-name
+</code></pre></li>
 <li><p>Push branch to remote </p>
-<pre><code>git push origin feature-branch</code></pre>
-</li>
+<pre><code>git push origin feature-branch
+</code></pre></li>
 <li><p>Delete local branch</p>
 <pre><code>git branch -d brach-name # already merged
-git branch -D brach-name # force delete</code></pre>
-</li>
+git branch -D brach-name # force delete
+</code></pre></li>
 <li><p>Delete remote branch</p>
-<pre><code>git push origin :remote-branch-name</code></pre>
-</li>
+<pre><code>git push origin :remote-branch-name
+</code></pre></li>
 <li><p>Rename remote branch</p>
 <pre><code>git checkout -b new-branch-name
 git push origin new-branch-name
-git push origin :old-branch-name</code></pre>
-</li>
+git push origin :old-branch-name
+</code></pre></li>
 <li><p>Pick one file from another brunch</p>
 <pre><code>git checkout branch file.txt # local
 git checkout origin/branch file.text # remote
-git show origin/branch:file.txt &gt; file.txt</code></pre>
-</li>
+git show origin/branch:file.txt &gt; file.txt
+</code></pre></li>
 <li><p>Remove file/dir from index</p>
 <pre><code>git rm --cached filename
-git rm -r --cached directoryname</code></pre>
-</li>
+git rm -r --cached directoryname
+</code></pre></li>
 <li><p>Work with remote origins</p>
 <pre><code>git remote -v # show origins
 git remote add `origin-name` `git@github.com:user/repo.git` # add origin
 git remote set-url `origin-name` `git@github.com:user/repo.git` # set origin url
-git remote rm `origin-name` # remove origin</code></pre>
-</li>
+git remote rm `origin-name` # remove origin
+</code></pre></li>
 </ul>
-<h4>Submodules</h4>
+<h4 id="submodules">Submodules</h4>
 <ul>
 <li><p>Add submodule</p>
-<pre><code>git submodule add {url} {path} #</code></pre>
-</li>
+<pre><code>git submodule add {url} {path} #
+</code></pre></li>
 <li><p>Update submodules</p>
-<pre><code>git submodule update --init</code></pre>
-</li>
+<pre><code>git submodule update --init
+</code></pre></li>
 <li><p>Remove submodule</p>
-<pre><code>git submodule deinit {path}</code></pre>
-<p>or below 1.8.3 version</p>
+<pre><code>git submodule deinit {path}
+</code></pre><p>or below 1.8.3 version</p>
 <pre><code>git config -f .gitmodules --remove-section submodule.{path}
 git config -f .git/config --remove-section submodule.{path}
 git rm --cached {path}
 rm -Rf {path}
 rm -Rf .git/modules/{path}
-# commit .gitmodules with remove submodule message</code></pre>
-</li>
+# commit .gitmodules with remove submodule message
+</code></pre></li>
 </ul>
-<h3>Config <code>.gitconfig</code></h3>
+<h3 id="config-gitconfig-">Config <code>.gitconfig</code></h3>
 <pre><code>[user]
   name = Your Name
   email = your@example.email
@@ -154,8 +154,8 @@ rm -Rf .git/modules/{path}
   hi = log --pretty=format:\&quot;%h %ad | %s%d [%an]\&quot; --graph --date=short
   show-files = show --pretty=&quot;format:&quot; --name-only
 [rerere]
-  enabled = 1</code></pre>
-
+  enabled = 1
+</code></pre>
       </div>
     </div>
     <div class="row-fluid footer">

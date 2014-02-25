@@ -12,8 +12,8 @@
       <div class="span8 offset2"><a href="/"><img src="/static/img/rhrn-github-io-qr.png"></a></div>
     </div>
     <div class="row-fluid content">
-      <div class="span8 offset2"><h2>Handling GitHub pages with jade and markdown</h2>
-<h3>Features</h3>
+      <div class="span8 offset2"><h2 id="handling-github-pages-with-jade-and-markdown">Handling GitHub pages with jade and markdown</h2>
+<h3 id="features">Features</h3>
 <ul>
 <li>jade template engine with extends, includes, variables<ul>
 <li>include markdown, coffee, etc.</li>
@@ -27,27 +27,27 @@
 <li>publish configuration</li>
 <li>comfortably view on github</li>
 </ul>
-<h3>Requirements</h3>
+<h3 id="requirements">Requirements</h3>
 <ul>
 <li>GitHub account with repository <code>{username}.github.io</code> where username your github login
 <a href="http://pages.github.com/">details here</a></li>
 <li>Node.js and npm must have installed</li>
 </ul>
-<h4>Installing</h4>
+<h4 id="installing">Installing</h4>
 <p>Go into repo directory or create directory <code>username.github.io</code></p>
 <pre><code>git clone git@github.com:username/username.github.io.git
 # or just create empty directory and link to repo later
 # mkdir username.github.io
-cd username.github.io</code></pre>
-<p>Initialize npm package file and fill fileds</p>
-<pre><code>npm init</code></pre>
-<p>global packages</p>
-<pre><code>sudo npm install -g jade grunt marked</code></pre>
-<p>install <code>grunt</code> tasks and <code>connect</code> framework</p>
+cd username.github.io
+</code></pre><p>Initialize npm package file and fill fileds</p>
+<pre><code>npm init
+</code></pre><p>global packages</p>
+<pre><code>sudo npm install -g jade grunt marked
+</code></pre><p>install <code>grunt</code> tasks and <code>connect</code> framework</p>
 <pre><code>npm install grunt-contrib-watch --save-dev
 npm install grunt-jade-tasks --save-dev
-npm install connect --save-dev</code></pre>
-<p>Create file <code>Gruntfile.js</code> with</p>
+npm install connect --save-dev
+</code></pre><p>Create file <code>Gruntfile.js</code> with</p>
 <pre><code>module.exports = function(grunt) {
 
   grunt.initConfig({
@@ -107,8 +107,8 @@ npm install connect --save-dev</code></pre>
     grunt.task.run([&quot;watch:jade&quot;]);
   });
 
-};</code></pre>
-<p>Create directory <code>layouts</code> and default jade layout <code>layouts/default.jade</code> with</p>
+};
+</code></pre><p>Create directory <code>layouts</code> and default jade layout <code>layouts/default.jade</code> with</p>
 <pre><code>!!!
 html
   block vars
@@ -128,44 +128,44 @@ html
     block scripts
     block analytics
       script.
-      // google analytics code, etc...</code></pre>
-<p>Create file <code>README.md</code> with</p>
-<pre><code>####Posts</code></pre>
-<p>Create file <code>index.jade</code> with</p>
+      // google analytics code, etc...
+</code></pre><p>Create file <code>README.md</code> with</p>
+<pre><code>####Posts
+</code></pre><p>Create file <code>index.jade</code> with</p>
 <pre><code>extends layouts/default
 
 block vars
   pageTitle = &#39;Home&#39;
 
 block content
-  include README.md</code></pre>
-<p>Create file <code>.gitignore</code> with</p>
+  include README.md
+</code></pre><p>Create file <code>.gitignore</code> with</p>
 <pre><code>npm-debug.log
-node_modules/</code></pre>
-<p>Run grunt</p>
-<pre><code>grunt</code></pre>
-<p>output will like this</p>
+node_modules/
+</code></pre><p>Run grunt</p>
+<pre><code>grunt
+</code></pre><p>output will like this</p>
 <pre><code>Running &quot;jade:debug&quot; (jade) task
 File &quot;index.html&quot; saved.
 
 Running &quot;web&quot; task
 http://localhost:8001
 
-Running &quot;watch:jade&quot; (watch) task</code></pre>
-<p>So, open in browser <code>http://localhost:8001</code>
+Running &quot;watch:jade&quot; (watch) task
+</code></pre><p>So, open in browser <code>http://localhost:8001</code>
 and on any changes <code>*.jade</code> or <code>*.md</code> files page will be reloaded, very usefull:)</p>
 <p>To prepare to publish run</p>
-<pre><code>grunt jade:publish</code></pre>
-<h4>Workflow example</h4>
+<pre><code>grunt jade:publish
+</code></pre><h4 id="workflow-example">Workflow example</h4>
 <ul>
 <li><p>Create post directory <code>first-post</code></p>
-<pre><code>mkdir first-post</code></pre>
-</li>
+<pre><code>mkdir first-post
+</code></pre></li>
 <li><p>Create <code>first-post/README.md</code> with main post content</p>
 <pre><code>### First post header
 
-&gt; First post body</code></pre>
-</li>
+&gt; First post body
+</code></pre></li>
 <li><p>Create <code>first-post/index.jade</code> with extends layout, title, some text and incuding markdown</p>
 <pre><code>extends ../layouts/default
 
@@ -173,28 +173,28 @@ block vars
   - var pageTitle = &#39;First post title&#39;
 
 block content
-  include README.md</code></pre>
-</li>
-<li>Add link to entry point <code>README.md</code><pre><code>[First post](first-post)</code></pre>
-</li>
-<li>Prepare to publish<pre><code>grunt publish</code></pre>
-</li>
+  include README.md
+</code></pre></li>
+<li>Add link to entry point <code>README.md</code><pre><code>[First post](first-post)
+</code></pre></li>
+<li>Prepare to publish<pre><code>grunt publish
+</code></pre></li>
 <li>Push to repository<pre><code>git add .
 git commit -m &quot;first post commit&quot;
-git push origin master</code></pre>
-</li>
+git push origin master
+</code></pre></li>
 <li>Go to <code>http://{username}.gitgub.io/</code></li>
 <li>Profit</li>
 </ul>
-<h4>Structure</h4>
+<h4 id="structure">Structure</h4>
 <pre><code>package.json - npm package config
 Gruntfile.js - grunt tasks config
 layouts/ - jade layouts
 index.jade - entry point
 README.md - entry point content
 static/ - img, css, js 
-.gitignore - ignore unnecessary files</code></pre>
-
+.gitignore - ignore unnecessary files
+</code></pre>
       </div>
     </div>
     <div class="row-fluid footer">
