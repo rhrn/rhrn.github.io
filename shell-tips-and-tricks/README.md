@@ -9,3 +9,9 @@ ps -o ppid= {pid}
 ```
 ps -p {pid} -o comm=
 ```
+
+* Show opened ports
+```
+sudo netstat -nlp
+sudo ss -nlpt # or
+```
