@@ -18,10 +18,11 @@
 `S` - modify line
 
 * Find word  
-`/` - by pattern  
+`/` + *pattern* - by pattern  
 `/\c` + *pattern* - case insensitivity  
 `*` - under cursor forwards  
 `#` - under cursor backwards  
+`<ctrl>r + 0`- paste yanked text in patterns input  
 
 * Find character  
 `f` + *character* in line  
