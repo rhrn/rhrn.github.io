@@ -36,6 +36,7 @@ git diff filename # file
 * Undo file changes
 ```
 git checkout filename
+git checkout -p # partial
 ```
 
 * Add changes to be commited
