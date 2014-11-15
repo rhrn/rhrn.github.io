@@ -8,6 +8,8 @@
 
 [Mongodb tips and tricks](mongodb-tips-and-tricks)  
 
+[Ubuntu tips and tricks](ubuntu-tips-and-tricks)  
+
 [Handling GitHub pages with jade and markdown](handling-github-pages-with-jade-and-markdown)
 
 #### Demos
