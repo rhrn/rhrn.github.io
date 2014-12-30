@@ -55,8 +55,8 @@
 `:E` - file explorer  
 
 * Open recent files
-- `:bro ol` - open recent files list
-- `q` - open prompt terminal and type file number
+  + `:bro ol` - open recent files list
+  + `q` - open prompt terminal and type file number
 
 * Fix indent  
 `=` - on line  
