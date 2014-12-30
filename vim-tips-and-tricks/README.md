@@ -13,6 +13,7 @@
 `cw` - replace word with insert mode  
 `xp` - swap two characters  
 `~` - invert letter case (A->a, a->A)  
+`viw~`  - flip case word under cursor
 `u` - undo  
 `<Ctrl>r` - redo  
 `S` - modify line
@@ -53,6 +54,10 @@
 `:e` + *path* - open one file  
 `:E` - file explorer  
 
+* Open recent files
+- `:bro ol` - open recent files list
+- `q` - open prompt terminal and type file number
+
 * Fix indent  
 `=` - on line  
 `=%` - in the current braces  
@@ -65,6 +70,7 @@
 `>>` - indent right line by tab  
 `<<` - indent left line by tab  
 `.` - repeat last command  
+`:%s=  *$==` - delete end of line blanks
 
 * Visaul mode  
 `v` - default mode  
