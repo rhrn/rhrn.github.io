@@ -4,6 +4,8 @@
 
 [Vim tips and tricks](vim-tips-and-tricks)  
 
+[Docker tips and tricks](docker-tips-and-tricks)  
+
 [Shell tips and tricks](shell-tips-and-tricks)  
 
 [Mongodb tips and tricks](mongodb-tips-and-tricks)  
