@@ -78,6 +78,18 @@ git revert `sha-commit`
 git show `sha-commit` -- filename | git apply -R
 ```
 
+#### Tags
+
+* Remove local tag
+```
+git tag -d tagName
+```
+
+* Remove remove tag
+```
+git push origin :refs/tags/tagName
+```
+
 #### Branches
 
 * Show branches
