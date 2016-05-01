@@ -1,0 +1,53 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name="viewport" content="initial-scale=1, maximum-scale=1")
+    link(href='http://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' href='styles.css')
+
+  body
+    .watch
+      .watch-text
+    script(src='timetowords.js')
+    script.
+
+      var watch = document.querySelector('.watch');
+      var watchText = document.querySelector('.watch-text');
+
+      var update = function(hour, minutes) {
+
+        if (!hour || !minutes) {
+          var date = new Date();
+          hour = date.getHours();
+          minutes = date.getMinutes();
+        }
+
+
+        var time = toWords(hour, minutes);
+        watchText.innerHTML = time.value;
+
+      }
+
+      var resize = function() {
+
+        var size = document.body.clientHeight < document.body.clientWidth ? document.body.clientHeight : document.body.clientWidth;
+
+        watch.style.width = size + 'px';
+        watch.style.height = size + 'px';
+        watch.style.fontSize = (size / 150) + 'em';
+
+      };
+
+      update();
+      resize();
+
+      document.body.onclick = function() {
+
+        var hour = Math.floor(Math.random() * 23);
+        var minutes = Math.floor(Math.random() * 60);
+
+        update(hour, minutes);
+      };
+
+      window.onresize = resize;
