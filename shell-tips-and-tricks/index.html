@@ -24,6 +24,26 @@
 <pre><code>sudo netstat -nlp
 sudo ss -nlpt # or
 </code></pre></li>
+<li><p>Sort ps output by memory</p>
+<pre><code>ps aux --sort -rss
+</code></pre></li>
+<li><p>Gen certificates pair</p>
+<pre><code>openssl req -nodes -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 9999 -subj &#39;/CN=localhost&#39;
+</code></pre></li>
+<li><p>Show certificate expiration</p>
+<pre><code>openssl s_client -showcerts -connect {host}:{port} &lt;/dev/null | openssl x509 -noout -dates
+</code></pre></li>
+<li><p>Check certificates on match</p>
+<pre><code>openssl x509 -noout -modulus -in server.crt | openssl md5
+openssl rsa -noout -modulus -in server.key | openssl md5
+openssl req -noout -modulus -in server.csr | openssl md5
+</code></pre></li>
+<li><p>Change terminal size. Useful for android adb shell</p>
+<pre><code>stty rows 60 cols 156
+</code></pre></li>
+<li><p>Full copy directory</p>
+<pre><code>rsync -avxHAX --progress / /new-disk/
+</code></pre></li>
 </ul>
 
       </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Home &mdash; @rhrn</title>
+    <title>Docker - tips and tricks &mdash; @rhrn</title>
     <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width">
@@ -12,20 +12,19 @@
       <div class="span8 offset2"><a href="/"><img src="/static/img/rhrn-github-io-qr.png"></a></div>
     </div>
     <div class="row-fluid content">
-      <div class="span8 offset2"><h4 id="posts">Posts</h4>
-<p><a href="git-tips-and-tricks">Git tips and tricks</a>  </p>
-<p><a href="vim-tips-and-tricks">Vim tips and tricks</a>  </p>
-<p><a href="docker-tips-and-tricks">Docker tips and tricks</a>  </p>
-<p><a href="shell-tips-and-tricks">Shell tips and tricks</a>  </p>
-<p><a href="mongodb-tips-and-tricks">Mongodb tips and tricks</a>  </p>
-<p><a href="ubuntu-tips-and-tricks">Ubuntu tips and tricks</a>  </p>
-<p><a href="handling-github-pages-with-jade-and-markdown">Handling GitHub pages with jade and markdown</a></p>
-<h4 id="demos">Demos</h4>
-<p><a href="demos/watch">Text Watch (Russian)</a>  </p>
-<p><a href="demos/css3-flip-card">3D flip card (css3)</a>  </p>
-<h4 id="about-me">About me</h4>
-<p><a href="resume">Resume</a>  </p>
-<p><a href="resume-ru">Резюме</a>  </p>
+      <div class="span8 offset2"><ul>
+<li><p>Setting tag on an image</p>
+<pre><code>sudo docker tag 5db5f8471261 rhrn/ubuntu:webdev
+</code></pre></li>
+<li><p>Get bash inside runned container</p>
+<pre><code>sudo docker exec -i -t 665b4a1e17b6 bash
+</code></pre></li>
+<li><p>Launch docker virtual machines with static <code>https://github.com/docker/machine/issues/1709#issuecomment-161026484</code></p>
+<pre><code>docker-machine create -d virtualbox --virtualbox-hostonly-cidr &quot;192.168.96.1/24&quot; vhost3 # 192.168.96.100
+docker-machine create -d virtualbox --virtualbox-hostonly-cidr &quot;192.168.97.1/24&quot; vhost2 # 192.168.97.100
+docker-machine create -d virtualbox --virtualbox-hostonly-cidr &quot;192.168.98.1/24&quot; vhost1 # 192.168.98.100
+</code></pre></li>
+</ul>
 
       </div>
     </div>

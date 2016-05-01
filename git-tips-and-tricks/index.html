@@ -67,6 +67,15 @@ git reset HEAD^ # keep in not commit stage
 <pre><code>git show `sha-commit` -- filename | git apply -R
 </code></pre></li>
 </ul>
+<h4 id="tags">Tags</h4>
+<ul>
+<li><p>Remove local tag</p>
+<pre><code>git tag -d tagName
+</code></pre></li>
+<li><p>Remove remove tag</p>
+<pre><code>git push origin :refs/tags/tagName
+</code></pre></li>
+</ul>
 <h4 id="branches">Branches</h4>
 <ul>
 <li><p>Show branches</p>

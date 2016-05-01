@@ -16,7 +16,8 @@
 <ul>
 <li><p>Jump between modifications<br><code>g;</code> - backward<br><code>g,</code> - forward<br><code>`.</code> - to last<br><code>&lt;Ctrl&gt;i</code> - backward through files<br><code>&lt;Ctrl&gt;o</code> - forward through files  </p>
 </li>
-<li><p>Editing<br><code>ct</code> + <em>character</em> - delete till character with insert mode<br><code>di</code> + <em>character</em> - delete between charactes (quotes, brackets)<br><code>cw</code> - replace word with insert mode<br><code>xp</code> - swap two characters<br><code>~</code> - invert letter case (A-&gt;a, a-&gt;A)<br><code>u</code> - undo<br><code>&lt;Ctrl&gt;r</code> - redo<br><code>S</code> - modify line</p>
+<li><p>Editing<br><code>ct</code> + <em>character</em> - delete till character with insert mode<br><code>di</code> + <em>character</em> - delete between charactes (quotes, brackets)<br><code>cw</code> - replace word with insert mode<br><code>xp</code> - swap two characters<br><code>~</code> - invert letter case (A-&gt;a, a-&gt;A)<br><code>viw~</code>  - flip case word under cursor
+<code>u</code> - undo<br><code>&lt;Ctrl&gt;r</code> - redo<br><code>S</code> - modify line</p>
 </li>
 <li><p>Find word<br><code>/</code> + <em>pattern</em> - by pattern<br><code>/\c</code> + <em>pattern</em> - case insensitivity<br><code>*</code> - under cursor forwards<br><code>#</code> - under cursor backwards<br><code>&lt;ctrl&gt;r + 0</code>- paste yanked text in patterns input  </p>
 </li>
@@ -28,11 +29,17 @@
 </li>
 <li><p>Open files<br><code>:e</code> + <em>path</em> - open one file<br><code>:E</code> - file explorer  </p>
 </li>
+<li><p>Open recent files</p>
+<ol>
+<li><code>:bro ol</code> - open recent files list</li>
+<li><code>q</code> - open prompt terminal and type file number</li>
+</ol>
+</li>
 <li><p>Fix indent<br><code>=</code> - on line<br><code>=%</code> - in the current braces<br><code>gg=G</code> - global file  </p>
 </li>
 <li><p>Delete Window carriage return character ^M<br><code>:%s/&lt;Ctrl&gt;v&lt;Ctrl&gt;m/g</code>  </p>
 </li>
-<li><p>Misc<br><code>&gt;&gt;</code> - indent right line by tab<br><code>&lt;&lt;</code> - indent left line by tab<br><code>.</code> - repeat last command  </p>
+<li><p>Misc<br><code>&gt;&gt;</code> - indent right line by tab<br><code>&lt;&lt;</code> - indent left line by tab<br><code>.</code> - repeat last command<br><code>:%s=  *$==</code> - delete end of line blanks</p>
 </li>
 <li><p>Visaul mode<br><code>v</code> - default mode<br><code>&lt;Ctrl&gt;v</code> - vertical mode<br><code>&lt;Shift&gt;v</code> - select by lines  </p>
 </li>
