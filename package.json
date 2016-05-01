@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "dependencies": {
-    "connect": "latest"
+    "connect": "latest",
+    "marked": "^0.3.5"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,7 @@
   "readmeFilename": "README.md",
   "gitHead": "847acd8c4d6c0a65f6529e6cb7b5b2cfc1348e71",
   "devDependencies": {
+    "grunt": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-jade-tasks": "latest"
   }
