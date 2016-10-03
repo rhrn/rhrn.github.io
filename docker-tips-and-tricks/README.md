@@ -14,3 +14,13 @@ docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.96.1/24"
 docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.97.1/24" vhost2 # 192.168.97.100
 docker-machine create -d virtualbox --virtualbox-hostonly-cidr "192.168.98.1/24" vhost1 # 192.168.98.100
 ```
+
+* Clear docker unused images
+```
+docker rmi $(docker images -f "dangling=true" -q)
+```
+
+* Clear docker exited containers
+```
+docker rm $(docker ps -aq -f status=exited)
+```
