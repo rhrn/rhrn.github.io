@@ -31,3 +31,20 @@ update-locale LANG=en_US.utf8 LANGUAGE=en_US.utf8 LC_ALL=en_US.utf8
 cat /etc/timezone # show current timezone
 sudo dpkg-reconfigure tzdata
 ```
+
+
+* add ipv6 support
+```
+ip -6 addr add public_ipv6_address/64 dev eth0
+ip -6 route add default via public_ipv6_gateway dev eth0
+```
+
+* put /etc/network/interfaces
+```
+iface eth0 inet6 static
+  address primary_ipv6_address
+  netmask 64
+  gateway ipv6_gateway
+  autoconf 0
+  dns-nameservers 2001:4860:4860::8844 2001:4860:4860::8888
+```
