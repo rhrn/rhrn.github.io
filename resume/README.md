@@ -16,34 +16,51 @@
 
 ```
 I love and use:
-  * server: linux (ubuntu), nginx, node.js, mongodb, git, redis,
-      npm, express.js, grunt.js, jade, stylus, coffee-script
+  * server: linux (ubuntu), docker, nginx, node.js, mongodb, postgres, git, redis,
+      npm, express.js, hapi.js, grunt.js, mongoose.js, sequalize.js, jade, stylus, elasticsearch
   * client: javascript, angular.js, html5, css3, twitter bootstrap
 ```
 
 ### Professional Skills
 
   * platform: javascript, nodejs
-  * storages: monogodb, redis, postgresql
+  * storages: monogodb, redis, postgres
   * framewoks:
     * frontend
       * javascript: angular
       * css: twitter bootstrap
     * backend
-      * nodejs: express
+      * nodejs: hapi.js, express
     * tests:
-      * js: mocha, chai, supertest
+      * js: mocha, chai, supertest, lab, nightwatch, selenium
   * preprocessors:
-    * jade, stylus, coffee
+    * jade, slm, stylus
   * web-servers: nginx
-  * search-engines: sphinx
+  * search-engines: elasticsearch
   * cvs: git
   * toos: node-inspector, chrome dev tools
   * os: linux (ubuntu)
 
 ### Work Experience
 
-#### 10.2012 - current
+#### 05.2014 - current
+
+  http://veritamo.com
+
+  role: Full-Stack Developer, DevOps (Ubuntu, Docker)
+
+  ```
+  * develop rest api for mobile and web dashboard, web dashboard
+  devops 
+  ```
+
+  ```
+  * technology
+  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, sequalize.js, mongoose.js, nginx, docker, elasticsearch
+  frontend: angular, css3, html5, javascript, rest api, twitter bootstrap
+  ```
+
+#### 10.2012 - 02.2014
 
   http://www.game-insight.com Russia, Moscow
 
