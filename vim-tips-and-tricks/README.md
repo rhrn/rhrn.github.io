@@ -64,7 +64,7 @@
 `gg=G` - global file  
 
 * Delete Window carriage return character ^M  
-`:%s/<Ctrl>v<Ctrl>m/g`  
+`:%s/<Ctrl>v<Ctrl>m//g`  
 
 * Misc  
 `>>` - indent right line by tab  
