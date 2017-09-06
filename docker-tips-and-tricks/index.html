@@ -30,6 +30,9 @@ docker-machine create -d virtualbox --virtualbox-hostonly-cidr &quot;192.168.98.
 <li><p>Clear docker exited containers</p>
 <pre><code>docker rm $(docker ps -aq -f status=exited)
 </code></pre></li>
+<li><p>Clear unused volumes</p>
+<pre><code>docker volume ls -qf dangling=true | xargs -r docker volume rm
+</code></pre></li>
 </ul>
 
       </div>

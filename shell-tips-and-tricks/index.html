@@ -44,6 +44,15 @@ openssl req -noout -modulus -in server.csr | openssl md5
 <li><p>Full copy directory</p>
 <pre><code>rsync -avxHAX --progress / /new-disk/
 </code></pre></li>
+<li><p>Show disk usage by directories inlcude hidden</p>
+<pre><code>du -sch .[!.]* * | sort -h
+</code></pre></li>
+<li><p>Round png image</p>
+<pre><code>convert -size 512x512 xc:none -fill white -draw &#39;roundRectangle 0,0 512,512 50,50&#39; in.png -compose SrcIn -composite rounded.png
+</code></pre></li>
+<li><p>ssh tunnel from remote <code>localhost:8080</code> to local machine <code>localhost:8082</code></p>
+<pre><code>ssh -N -f -L 8082:localhost:8080 user@remote_ip_address
+</code></pre></li>
 </ul>
 
       </div>
