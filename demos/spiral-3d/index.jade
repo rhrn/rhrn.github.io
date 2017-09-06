@@ -1,0 +1,63 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0")
+    style.
+      body {
+        overflow: hidden;
+        margin: 0;
+      }
+  body
+    script(src="three.min.js")
+    script(src="OrbitControls.js")
+    script.
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+      var controls = new THREE.OrbitControls( camera );
+      controls.minDistance = 10;
+      controls.maxDistance = 50;
+
+      var renderer = new THREE.WebGLRenderer();
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      document.body.appendChild(renderer.domElement);
+
+      var sunGeometry = new THREE.SphereGeometry(3, 50, 50, 0, Math.PI * 2, 0, Math.PI * 2);
+      var earthGeometry = new THREE.SphereGeometry(0.5, 50, 50, 0, Math.PI * 2, 0, Math.PI * 2);
+      var moonGeometry = new THREE.SphereGeometry(0.1, 50, 50, 0, Math.PI * 2, 0, Math.PI * 2);
+
+      var sunPivot = new THREE.Object3D();
+      var earthPivot = new THREE.Object3D();
+      var moonPivot = new THREE.Object3D();
+
+      var material = new THREE.MeshNormalMaterial();
+
+      var sun = new THREE.Mesh(sunGeometry, material);
+      var earth = new THREE.Mesh(earthGeometry, material);
+      var moon = new THREE.Mesh(moonGeometry, material);
+
+      sunPivot.add(sun);
+      earthPivot.add(earth);
+      moonPivot.add(moon);
+
+      sun.add(earthPivot);
+      earth.add(moonPivot);
+      scene.add(sunPivot);
+
+      camera.position.z = 10;
+      earth.position.x = 5;
+      moon.position.x = 1;
+
+      var render = function () {
+          requestAnimationFrame(render);
+          
+          sunPivot.rotation.y += 0.01;
+          earthPivot.rotation.y += 0.01;
+          moonPivot.rotation.y += 0.03;
+          moonPivot.rotation.x += 0.001;
+
+          renderer.render(scene, camera);
+      };
+
+      render();

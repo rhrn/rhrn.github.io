@@ -16,33 +16,49 @@
 
 ```text
 Мне нравится и использую:
-  * server: linux (ubuntu), nginx, node.js, mongodb, git, redis,
-      npm, express.js, grunt.js, jade, stylus, coffee-script
-  * client: javascript, angular.js, html5, css3, twitter bootstrap
+  * backend: ubuntu, docker, nginx, node.js, mongodb, postgres, git, redis, elasticsearch,
+      npm, express.js, hapi.js, grunt.js, mongoose.js, sequalize.js, jade, stylus
+  * web: javascript, angular, html5, css3, bootstrap
+  * mobile: nativescript + angular + ngrx
 ```
 
 ### Профессиональные навыки
 
   * platform: javascript, nodejs
-  * storages: monogodb, redis, postgresql
+  * storages: monogodb, redis, postgres, elasticsearch
   * framewoks:
     * frontend
       * javascript: angular
-      * css: twitter bootstrap
+      * css: bootstrap
     * backend
-      * nodejs: express
+      * nodejs: hapi.js, express
     * tests:
-      * js: mocha, chai, supertest
+      * js: mocha, chai, ava, lab, nightwatch, selenium
   * preprocessors:
-    * jade, stylus, coffee
+    * jade, slm, stylus
   * web-servers: nginx
-  * search-engines: sphinx
   * cvs: git
   * toos: node-inspector, chrome dev tools
   * os: linux (ubuntu)
 
-
 ### Опыт работы
+
+#### 05.2014 - current
+
+  http://veritamo.com
+
+  role: Full-Stack Developer, DevOps (ubuntu, docker)
+
+  ```
+  * разработка бэкенда, фронтчасть на angularjs, интеграция со сторонними сервисами
+  * devops, docker swarm, отказоустойчевый кластер, aws, softlayer
+  ```
+
+  ```
+  * technology
+  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, sequalize.js, mongoose.js, nginx, docker, elasticsearch, mqtt
+  frontend: angular, css3, html5, javascript, bootstrap
+  ```
 
 #### 10.2012 - 01.2014
 

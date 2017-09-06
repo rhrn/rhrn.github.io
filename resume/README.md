@@ -15,28 +15,28 @@
 ### Short description
 
 ```
-I love and use:
-  * server: linux (ubuntu), docker, nginx, node.js, mongodb, postgres, git, redis,
-      npm, express.js, hapi.js, grunt.js, mongoose.js, sequalize.js, jade, stylus, elasticsearch
-  * client: javascript, angular.js, html5, css3, twitter bootstrap
+I like and use:
+  * server: ubuntu, docker, nginx, node.js, mongodb, postgres, git, redis, elasticsearch,
+      npm, express.js, hapi.js, grunt.js, mongoose.js, sequalize.js, jade, stylus
+  * web: javascript, angular, html5, css3, bootstrap
+  * mobile: nativescript + angular + ngrx
 ```
 
 ### Professional Skills
 
   * platform: javascript, nodejs
-  * storages: monogodb, redis, postgres
+  * storages: monogodb, redis, postgres, elasticsearch
   * framewoks:
     * frontend
       * javascript: angular
-      * css: twitter bootstrap
+      * css: bootstrap
     * backend
       * nodejs: hapi.js, express
     * tests:
-      * js: mocha, chai, supertest, lab, nightwatch, selenium
+      * js: mocha, chai, ava, lab, nightwatch, selenium
   * preprocessors:
     * jade, slm, stylus
   * web-servers: nginx
-  * search-engines: elasticsearch
   * cvs: git
   * toos: node-inspector, chrome dev tools
   * os: linux (ubuntu)
@@ -47,17 +47,18 @@ I love and use:
 
   http://veritamo.com
 
-  role: Full-Stack Developer, DevOps (Ubuntu, Docker)
+  role: Full-Stack Developer, DevOps (ubuntu, docker)
 
   ```
-  * develop rest api for mobile and web dashboard, web dashboard
-  devops 
+  * backend, frontend, integration with 3d party services
+  * devops, docker swarm, HA cluster, aws, softlayer
   ```
 
   ```
   * technology
-  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, sequalize.js, mongoose.js, nginx, docker, elasticsearch
-  frontend: angular, css3, html5, javascript, rest api, twitter bootstrap
+  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, webpack, sequalize.js, mongoose.js,
+    nginx, docker, elasticsearch, mqtt
+  frontend: angularjs, css3, html5, javascript, bootstrap
   ```
 
 #### 10.2012 - 02.2014
@@ -75,7 +76,7 @@ I love and use:
   ```
   * technology
   backend: node.js, mongodb, express.js, jade, stylus, grunt, php 5.4, propel (orm), redis, postgresql, phpunit, phing, nginx
-  frontend: css3, html5, javascript, angular, jquery, json-rpc, twitter bootstrap
+  frontend: css3, html5, javascript, angularjs, jquery, json-rpc, bootstrap
   ```
 
 #### 04.2012 - 10.2012 OOO ALC
@@ -95,7 +96,7 @@ I love and use:
   ```
   * technology
   backend: php 5.4 (kohana 3.3), kohana orm, mysql 5.5, nginx 1.2, sphinx, curl, ubuntu
-  frontend: twitter bootstrap, backbone.js, underscore.js, jquery.js, require.js, rest api & json
+  frontend: bootstrap, backbone.js, underscore.js, jquery.js, require.js, rest api & json
   ```
 
 #### 11.2011 - 04.2012 Global Advisors (DST)

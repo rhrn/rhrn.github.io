@@ -47,3 +47,18 @@ stty rows 60 cols 156
 ```
 rsync -avxHAX --progress / /new-disk/
 ```
+
+* Show disk usage by directories inlcude hidden
+```
+du -sch .[!.]* * | sort -h
+```
+
+* Round png image
+```
+convert -size 512x512 xc:none -fill white -draw 'roundRectangle 0,0 512,512 50,50' in.png -compose SrcIn -composite rounded.png
+```
+
+* ssh tunnel from remote `localhost:8080` to local machine `localhost:8082`
+```
+ssh -N -f -L 8082:localhost:8080 user@remote_ip_address
+```

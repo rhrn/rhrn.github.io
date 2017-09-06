@@ -24,3 +24,8 @@ docker rmi $(docker images -f "dangling=true" -q)
 ```
 docker rm $(docker ps -aq -f status=exited)
 ```
+
+* Clear unused volumes
+```
+docker volume ls -qf dangling=true | xargs -r docker volume rm
+```
