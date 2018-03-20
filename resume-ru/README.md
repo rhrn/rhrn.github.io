@@ -28,12 +28,12 @@
   * storages: monogodb, redis, postgres, elasticsearch
   * framewoks:
     * frontend
-      * javascript: angular
-      * css: bootstrap
+      * javascript: angular, react, webpack
+      * css: bootstrap, semantic ui
     * backend
       * nodejs: hapi.js, express
     * tests:
-      * js: mocha, chai, ava, lab, nightwatch, selenium
+      * js: mocha, chai, ava, jest, lab, nightwatch, selenium
   * preprocessors:
     * jade, slm, stylus
   * web-servers: nginx
@@ -43,7 +43,25 @@
 
 ### Опыт работы
 
-#### 05.2014 - current
+#### 10.2017 - current
+
+  http://squarex.io/
+
+  role: Full-Stack Developer, DevOps
+
+  ```
+  * backend, frontend
+  * blockchain: integration with bitcoin, ethereum, litecoin, ethereum classic
+  * devops, docker swarm, CI
+  ```
+
+  ```
+  * технологии
+  backend: node.js, postgres, sequalize.js, express.js, webpack, jest, nginx, docker
+  frontend: semantic ui, react
+  ```
+
+#### 05.2014 - 09.2017
 
   http://veritamo.com
 
@@ -55,7 +73,7 @@
   ```
 
   ```
-  * technology
+  * технологии
   backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, sequalize.js, mongoose.js, nginx, docker, elasticsearch, mqtt
   frontend: angular, css3, html5, javascript, bootstrap
   ```
