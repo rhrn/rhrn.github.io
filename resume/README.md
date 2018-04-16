@@ -3,7 +3,7 @@
   * Roman Nesterov
   * Russia, Moscow
   * birth: 16.07.1982
-  * tel: +7 926 8888 755
+  * tel: +79268888755
   * skype: maylog_
   * email: me@rhrn.ru
 
@@ -12,26 +12,20 @@
     * https://npmjs.org/~rhrn
     * http://rhrn.github.io
 
-### Short description
-
-```
-I like and use:
-  * server: ubuntu, docker, nginx, node.js, mongodb, postgres, git, redis, elasticsearch,
-      npm, express.js, hapi.js, grunt.js, mongoose.js, sequalize.js, jade, stylus
-  * web: javascript, angular, html5, css3, bootstrap
-  * mobile: nativescript + angular + ngrx
-```
-
 ### Professional Skills
 
+  * devops: docker smarm
   * platform: javascript, nodejs
-  * storages: monogodb, redis, postgres, elasticsearch
+  * storages: mongodb, postgres, elasticsearch, redis
   * framewoks:
+    * js
+      * rx.js, ngrx
+    * mobile: nativescript + angular + ngrx
     * frontend
-      * javascript: angular, react, webpack
+      * javascript: angular, react, webpack, nuxt
       * css: bootstrap, semantic ui
     * backend
-      * nodejs: hapi.js, express
+      * nodejs: hapi.js, express, sequalize, mongoose
     * tests:
       * js: mocha, chai, ava, jest, lab, nightwatch, selenium
   * preprocessors:
@@ -51,7 +45,7 @@ I like and use:
 
   ```
   * backend, frontend
-  * blockchain: integration with bitcoin, ethereum, litecoin, ethereum classic
+  * blockchain: ICO platform, integration with bitcoin, ethereum, litecoin, ethereum classic
   * devops, docker swarm, CI
   ```
 

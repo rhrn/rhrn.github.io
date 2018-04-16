@@ -12,26 +12,20 @@
     * https://npmjs.org/~rhrn
     * http://rhrn.github.io
 
-### Краткое описание
-
-```text
-Мне нравится и использую:
-  * backend: ubuntu, docker, nginx, node.js, mongodb, postgres, git, redis, elasticsearch,
-      npm, express.js, hapi.js, grunt.js, mongoose.js, sequalize.js, jade, stylus
-  * web: javascript, angular, html5, css3, bootstrap
-  * mobile: nativescript + angular + ngrx
-```
-
 ### Профессиональные навыки
 
+  * devops: docker smarm
   * platform: javascript, nodejs
-  * storages: monogodb, redis, postgres, elasticsearch
+  * storages: mongodb, postgres, elasticsearch, redis
   * framewoks:
+    * js
+      * rx.js, ngrx
+    * mobile: nativescript + angular + ngrx
     * frontend
-      * javascript: angular, react, webpack
+      * javascript: angular, react, webpack, nuxt
       * css: bootstrap, semantic ui
     * backend
-      * nodejs: hapi.js, express
+      * nodejs: hapi.js, express, sequalize, mongoose
     * tests:
       * js: mocha, chai, ava, jest, lab, nightwatch, selenium
   * preprocessors:
@@ -51,7 +45,7 @@
 
   ```
   * backend, frontend
-  * blockchain: integration with bitcoin, ethereum, litecoin, ethereum classic
+  * blockchain: ICO платформа, integration with bitcoin, ethereum, litecoin, ethereum classic
   * devops, docker swarm, CI
   ```
 
