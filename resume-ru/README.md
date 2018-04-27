@@ -8,32 +8,33 @@
   * email: me@rhrn.ru
 
   * ссылки:
+    * https://stackshare.io/rhrn
     * https://github.com/rhrn
     * https://npmjs.org/~rhrn
     * http://rhrn.github.io
 
 ### Профессиональные навыки
 
-  * devops: docker smarm
+  * devops: docker smarm, aws, gitlab-ci
   * platform: javascript, nodejs
   * storages: mongodb, postgres, elasticsearch, redis
   * framewoks:
     * js
-      * rx.js, ngrx
+      * rx.js, ngrx, nuxt
     * mobile: nativescript + angular + ngrx
     * frontend
-      * javascript: angular, react, webpack, nuxt
-      * css: bootstrap, semantic ui
+      * javascript: angular, react, webpack
+      * css: bootstrap, semantic ui, vuetifyjs
     * backend
       * nodejs: hapi.js, express, sequalize, mongoose
     * tests:
       * js: mocha, chai, ava, jest, lab, nightwatch, selenium
   * preprocessors:
-    * jade, slm, stylus
+    * pug, slm, stylus
   * web-servers: nginx
   * cvs: git
   * toos: node-inspector, chrome dev tools
-  * os: linux (ubuntu)
+  * os: linux (ubuntu, alpine)
 
 ### Опыт работы
 

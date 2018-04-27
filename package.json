@@ -6,6 +6,9 @@
     "connect": "latest",
     "marked": "^0.3.5"
   },
+  "scripts": {
+    "publish": "grunt publish"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/rhrn/rhrn.github.io.git"
