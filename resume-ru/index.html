@@ -32,26 +32,25 @@
 </ul>
 <h3 id="-">Профессиональные навыки</h3>
 <ul>
-<li>devops: docker smarm, aws, gitlab-ci</li>
 <li>platform: javascript, nodejs</li>
 <li>storages: mongodb, postgres, elasticsearch, redis</li>
-<li>framewoks:<ul>
-<li>js<ul>
-<li>rx.js, ngrx, nuxt</li>
-</ul>
-</li>
-<li>mobile: nativescript + angular + ngrx</li>
-<li>frontend<ul>
-<li>javascript: angular, react, webpack</li>
-<li>css: bootstrap, semantic ui, vuetifyjs</li>
-</ul>
-</li>
+<li>frameworks:<ul>
 <li>backend<ul>
-<li>nodejs: hapi.js, express, sequalize, mongoose</li>
+<li>nodejs: express, hapi, sequelize, mongoose, nuxt</li>
+</ul>
+</li>
+<li>frontend<ul>
+<li>javascript: angular, react, webpack, vue + vuex</li>
+<li>css: bootstrap, semantic ui, vuetifyjs</li>
 </ul>
 </li>
 <li>tests:<ul>
 <li>js: mocha, chai, ava, jest, lab, nightwatch, selenium</li>
+</ul>
+</li>
+<li>mobile: nativescript + angular + ngrx (for prototyping)</li>
+<li>other<ul>
+<li>rx.js, ngrx</li>
 </ul>
 </li>
 </ul>
@@ -60,29 +59,64 @@
 <li>pug, slm, stylus</li>
 </ul>
 </li>
-<li>web-servers: nginx</li>
-<li>cvs: git</li>
-<li>toos: node-inspector, chrome dev tools</li>
-<li>os: linux (ubuntu, alpine)</li>
+<li>documentation<ul>
+<li>openapi (swagger), puml diagrams</li>
 </ul>
-<h3 id="-">Опыт работы</h3>
-<h4 id="10-2017-current">10.2017 - current</h4>
+</li>
+<li>cvs: git</li>
+<li>toos: ndb, node-inspector, chrome dev tools</li>
+<li>os: linux (ubuntu, alpine)</li>
+<li>devops: docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt</li>
+</ul>
+<h3 id="-">Интересуюсь</h3>
+<pre><code>machine learning, tensorflow, computer vision,
+terraform, kubernetes, k3s, nats (stan), kafka, clickhouse
+svelte, molecularjs, gunjs
+mobile development, microservices, CRDT, realtime
+</code></pre><h3 id="-">Опыт работы</h3>
+<h4 id="02-2019-itorum-mr">02.2019 - (на текущий момент) Itorum MR</h4>
+<p>  <a href="http://itorum-mr.ru/">http://itorum-mr.ru/</a></p>
+<p>  role: Full-Stack Developer, DevOps</p>
+<pre><code>  * сервис удалённого эксперта и инспектирования
+  интеграционное rest api, микросервис для авторизации через ldap c sso, поддержка и доработка webrtc архитектуры,
+    потоковое json api, тесты c jest
+  автоматические сборки через gitlab c docker, dockerizing всех сервисов, сервис для тестирования ветвей кода
+    ansible скрипты, docker swarm оркестрация
+</code></pre><pre><code>  * технологии
+  backend: nodejs 10, express 4, sequelize 4, postgresql 9.4, redis, bulljs (queue), molecular js, typescript, jest, openapi (swagger)
+    websockets, webrtc, kurento, coturn
+  devops: docker, docker swarm, ansible, git, traefik
+  frontend: angular 5, rxjs, scss, gulp
+</code></pre><h4 id="09-2018-02-2019-voice-communication-">09.2018 - 02.2019 Voice Communication (Контрактная работа)</h4>
+<p>  <a href="http://lab.voice-com.ru/">http://lab.voice-com.ru/</a> </p>
+<p>  role: Frontend, DevOps</p>
+<pre><code>  * сервис видеостриминга
+  поддержка и разработка фронтенда на базе angular 6 для huawai tv, созданиме новых ui компонентов, много оптимизации бандла приложения
+  setup kubernetes environemt with deployments
+</code></pre><pre><code>  * технологии
+  frontend: angular 6, rxjs, ngrx, webpack 4, html, css, scss
+  devops: kubernets, gitlab, nginx
+</code></pre><h4 id="10-2017-08-2018-squarex">10.2017 - 08.2018 Squarex</h4>
 <p>  <a href="http://squarex.io/">http://squarex.io/</a></p>
 <p>  role: Full-Stack Developer, DevOps</p>
-<pre><code>  * backend, frontend
-  * blockchain: ICO платформа, integration with bitcoin, ethereum, litecoin, ethereum classic
-  * devops, docker swarm, CI
+<pre><code>  * блокчейн стартап в сфере недвижимости
+  создание личного кабинета в для инвестора, интеграция с сетями bitcoin, ethereum, litecoin, ethereum classic
+  gitlab builds with docker, docker swarm orchestration, continuous delivery
 </code></pre><pre><code>  * технологии
-  backend: node.js, postgres, sequalize.js, express.js, webpack, jest, nginx, docker
+  backend: node.js, postgres, sequelize.js, express.js, webpack, jest, nginx, docker
   frontend: semantic ui, react
-</code></pre><h4 id="05-2014-09-2017">05.2014 - 09.2017</h4>
+</code></pre><h4 id="05-2014-09-2017-veritamo">05.2014 - 09.2017 Veritamo</h4>
 <p>  <a href="http://veritamo.com">http://veritamo.com</a></p>
-<p>  role: Full-Stack Developer, DevOps (ubuntu, docker)</p>
-<pre><code>  * разработка бэкенда, фронтчасть на angularjs, интеграция со сторонними сервисами
-  * devops, docker swarm, отказоустойчевый кластер, aws, softlayer
+<p>  role: Full-Stack Developer, DevOps</p>
+<pre><code>  * косьерж сервис
+  бекенд для чатов в реальном времени, rest api для мобильный и веб устройств, UI для администраторов
+    интеграция с платёжными системами (stripe, braintree)
+  поддержка серверной архитектуры, миграция с softlayer на aws, создание отказоустойчивого кластера, докеризация всех сервисов
+    настройка мониторинга, ELK стека, автобекапы с восстановление
 </code></pre><pre><code>  * технологии
-  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, sequalize.js, mongoose.js, nginx, docker, elasticsearch, mqtt
-  frontend: angular, css3, html5, javascript, bootstrap
+  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, webpack, sequelize.js, mongoose.js,
+    nginx, docker, elasticsearch, mqtt
+  frontend: angularjs, css3, html5, javascript, bootstrap
 </code></pre><h4 id="10-2012-01-2014">10.2012 - 01.2014</h4>
 <p>  <a href="http://www.game-insight.com">http://www.game-insight.com</a> Россия, Москва</p>
 <p>  роль: Full-Stack Developer</p>

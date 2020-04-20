@@ -13,6 +13,19 @@
     </div>
     <div class="row-fluid content">
       <div class="span8 offset2"><ul>
+<li><p>Default editor</p>
+<pre><code>sudo update-alternatives --set editor /usr/bin/vim.basic
+</code></pre></li>
+<li><p>Config</p>
+<pre><code>lxc profile edit default
+</code></pre></li>
+<li><p>Update config</p>
+<pre><code>config:
+user.user-data: |
+  #cloud-config
+  ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUuAtbiXEgGKwc/ja8dsh8oSc9POlCYRqh8z1vWVw6rvfIhPwRkeLfzcIF5cKCJB26T64/ghrEanCfCS6Qo89gSYBprV7dCT+BKtmJ5GCw1mNPpRdvVFuGmOVEotoD8xnA+v3DvifRu7b9uKbx+dU6jUZ0mKmauvH2dRqp8H4qwjE+VYNgjHrJXB2Ph3NRZ+Qp/FhvYu8jqaISz6aUelI+8Yxi2HC15TJ+eCVkManPuTiNEjGYjNpOciQmncbmRLj3PJhIBLgn1T2tAxxKa9KCwi/DqcpNQEg55pwvopecOo1l5Wv7AOAamLZxqQNjUhWI8FtwrAQQWo4irO02/EuH rhrn@rhrn-eeepc
+</code></pre></li>
 <li><p>Apply shell config</p>
 <pre><code>source ~/.zshrc
 </code></pre></li>
@@ -48,6 +61,88 @@ netmask 64
 gateway ipv6_gateway
 autoconf 0
 dns-nameservers 2001:4860:4860::8844 2001:4860:4860::8888
+</code></pre></li>
+</ul>
+<h3 id="kubernetes">Kubernetes</h3>
+<ul>
+<li><a href="https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/">https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/</a></li>
+<li><a href="https://chrislovecnm.com/kubernetes/cni/choosing-a-cni-provider/">https://chrislovecnm.com/kubernetes/cni/choosing-a-cni-provider/</a></li>
+<li><a href="https://kubernetes.io/docs/setup/cri/#cri-o">https://kubernetes.io/docs/setup/cri/#cri-o</a></li>
+<li><a href="https://www.projectatomic.io/blog/2017/06/using-kubeadm-with-cri-o/">https://www.projectatomic.io/blog/2017/06/using-kubeadm-with-cri-o/</a></li>
+<li><a href="https://www.katacoda.com/courses/kubernetes/getting-started-with-kubeadm-crio">https://www.katacoda.com/courses/kubernetes/getting-started-with-kubeadm-crio</a></li>
+<li><a href="https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/">https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cri-o/blob/master/kubernetes.md">https://github.com/kubernetes-sigs/cri-o/blob/master/kubernetes.md</a></li>
+<li><a href="https://github.com/kubernetes-sigs/cri-o/blob/master/tutorial.md">https://github.com/kubernetes-sigs/cri-o/blob/master/tutorial.md</a></li>
+<li><a href="https://github.com/cri-o/cri-o-ansible/blob/master/cri-o.yml">https://github.com/cri-o/cri-o-ansible/blob/master/cri-o.yml</a></li>
+<li><p><a href="https://github.com/containernetworking/plugins">https://github.com/containernetworking/plugins</a></p>
+</li>
+<li><p>kubernetes</p>
+<pre><code>apt-get update &amp;&amp; apt-get install -y apt-transport-https curl
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+cat &lt;&lt;EOF &gt;/etc/apt/sources.list.d/kubernetes.list
+deb https://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+apt-get update
+apt-get install -y kubelet kubeadm kubectl
+apt-mark hold kubelet kubeadm kubectl
+</code></pre></li>
+</ul>
+<pre><code>cat /lib/systemd/system/kubelet.service
+</code></pre><ul>
+<li>pre cri
+```
+modprobe overlay
+modprobe br_netfilter</li>
+</ul>
+<h1 id="setup-required-sysctl-params-these-persist-across-reboots-">Setup required sysctl params, these persist across reboots.</h1>
+<p>cat &gt; /etc/sysctl.d/99-kubernetes-cri.conf &lt;&lt;EOF
+net.bridge.bridge-nf-call-iptables  = 1
+net.ipv4.ip_forward                 = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+EOF</p>
+<p>sysctl --system</p>
+<pre><code>
+* cri
+</code></pre><p>apt-get update
+apt-get upgrade
+add-apt-repository ppa:projectatomic/ppa
+apt-get update
+apt-get install cri-o-1.12
+systemctl enable crio.service</p>
+<pre><code>
+* commands
+</code></pre><p>kubeadm config images pull --cri-socket=&quot;/var/run/crio/crio.sock&quot;
+kubeadm init --cri-socket=&quot;/var/run/crio/crio.sock&quot;
+kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-cert-extra-sans={{ external_ip }}</p>
+<p>mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config</p>
+<p>export KUBECONFIG=$HOME/.kube/config</p>
+<p>kubectl apply -f <a href="https://raw.githubusercontent.com/coreos/flannel/bc79dd1505b0c8681ece4de4c0d86c5cd2643275/Documentation/kube-flannel.yml">https://raw.githubusercontent.com/coreos/flannel/bc79dd1505b0c8681ece4de4c0d86c5cd2643275/Documentation/kube-flannel.yml</a>
+kubectl taint nodes --all node-role.kubernetes.io/master-</p>
+<pre><code>
+
+systemctl list-unit-files
+journalctl -u kubelet
+journalctl --vacuum-time=2d
+</code></pre><p>apply network</p>
+<pre><code>FYI, I ran into the same issue and the following worked:
+
+#re-deploy weave network (in my case)
+export kubever=$(kubectl version | base64 | tr -d &#39;\n&#39;)
+kubectl apply -f &quot;https://cloud.weave.works/k8s/net?k8s-version=$kubever&quot;
+..then..
+systemctl restart docker &amp;&amp; systemctl restart kubelet
+
+kubectl create namespace registry
+docker run --rm --entrypoint htpasswd registry:2 -Bbn USER PASSWORD &gt; registry_htpasswd
+kubectl create secret generic registry --from-file registry_htpasswd --namespace=registry
+kubectl create secret docker-registry registry-credentials --docker-server=registry3.rhrn.ru --docker-username=docker --docker-password=Tf2OfgCvDYsMYYjrFyWk8jy7EImEQkpM8i9qaPq/+dU= --docker-email=me@rhrn.ru
+</code></pre><ul>
+<li>Fix (Unable to connect to the server: x509: certificate is valid for)<pre><code>rm /etc/kubernetes/pki/apiserver.*
+kubeadm alpha phase certs all --apiserver-advertise-address=0.0.0.0 --apiserver-cert-extra-sans=xxx.xxx.xxx.xxx,yyy.yyy.yyy.yyy
+docker rm -f `docker ps -q -f &#39;name=k8s_kube-apiserver*&#39;`
+systemctl restart kubelet
 </code></pre></li>
 </ul>
 
