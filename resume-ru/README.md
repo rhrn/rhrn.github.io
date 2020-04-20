@@ -15,62 +15,115 @@
 
 ### Профессиональные навыки
 
-  * devops: docker smarm, aws, gitlab-ci
   * platform: javascript, nodejs
   * storages: mongodb, postgres, elasticsearch, redis
-  * framewoks:
-    * js
-      * rx.js, ngrx, nuxt
-    * mobile: nativescript + angular + ngrx
-    * frontend
-      * javascript: angular, react, webpack
-      * css: bootstrap, semantic ui, vuetifyjs
+  * frameworks:
     * backend
-      * nodejs: hapi.js, express, sequalize, mongoose
+      * nodejs: express, hapi, sequelize, mongoose, nuxt
+    * frontend
+      * javascript: angular, react, webpack, vue + vuex
+      * css: bootstrap, semantic ui, vuetifyjs
     * tests:
       * js: mocha, chai, ava, jest, lab, nightwatch, selenium
+    * mobile: nativescript + angular + ngrx (for prototyping)
+    * other
+      * rx.js, ngrx
   * preprocessors:
     * pug, slm, stylus
-  * web-servers: nginx
+  * documentation
+    * openapi (swagger), puml diagrams
   * cvs: git
-  * toos: node-inspector, chrome dev tools
+  * toos: ndb, node-inspector, chrome dev tools
   * os: linux (ubuntu, alpine)
+  * devops: docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt
+
+### Интересуюсь
+```
+machine learning, tensorflow, computer vision,
+terraform, kubernetes, k3s, nats (stan), kafka, clickhouse
+svelte, molecularjs, gunjs
+mobile development, microservices, CRDT, realtime
+```
 
 ### Опыт работы
 
-#### 10.2017 - current
+#### 02.2019 - (на текущий момент) Itorum MR
+
+  http://itorum-mr.ru/
+
+  role: Full-Stack Developer, DevOps
+
+  ```
+  * сервис удалённого эксперта и инспектирования
+  интеграционное rest api, микросервис для авторизации через ldap c sso, поддержка и доработка webrtc архитектуры,
+    потоковое json api, тесты c jest
+  автоматические сборки через gitlab c docker, dockerizing всех сервисов, сервис для тестирования ветвей кода
+    ansible скрипты, docker swarm оркестрация
+  ```
+
+  ```
+  * технологии
+  backend: nodejs 10, express 4, sequelize 4, postgresql 9.4, redis, bulljs (queue), molecular js, typescript, jest, openapi (swagger)
+    websockets, webrtc, kurento, coturn
+  devops: docker, docker swarm, ansible, git, traefik
+  frontend: angular 5, rxjs, scss, gulp
+  ```
+
+#### 09.2018 - 02.2019 Voice Communication (Контрактная работа)
+
+  http://lab.voice-com.ru/ 
+
+  role: Frontend, DevOps
+
+  ```
+  * сервис видеостриминга
+  поддержка и разработка фронтенда на базе angular 6 для huawai tv, созданиме новых ui компонентов, много оптимизации бандла приложения
+  setup kubernetes environemt with deployments
+  ```
+
+  ```
+  * технологии
+  frontend: angular 6, rxjs, ngrx, webpack 4, html, css, scss
+  devops: kubernets, gitlab, nginx
+  ```
+
+#### 10.2017 - 08.2018 Squarex
 
   http://squarex.io/
 
   role: Full-Stack Developer, DevOps
 
   ```
-  * backend, frontend
-  * blockchain: ICO платформа, integration with bitcoin, ethereum, litecoin, ethereum classic
-  * devops, docker swarm, CI
+  * блокчейн стартап в сфере недвижимости
+  создание личного кабинета в для инвестора, интеграция с сетями bitcoin, ethereum, litecoin, ethereum classic
+  gitlab builds with docker, docker swarm orchestration, continuous delivery
   ```
 
   ```
   * технологии
-  backend: node.js, postgres, sequalize.js, express.js, webpack, jest, nginx, docker
+  backend: node.js, postgres, sequelize.js, express.js, webpack, jest, nginx, docker
   frontend: semantic ui, react
   ```
 
-#### 05.2014 - 09.2017
+#### 05.2014 - 09.2017 Veritamo
 
   http://veritamo.com
 
-  role: Full-Stack Developer, DevOps (ubuntu, docker)
+  role: Full-Stack Developer, DevOps
 
   ```
-  * разработка бэкенда, фронтчасть на angularjs, интеграция со сторонними сервисами
-  * devops, docker swarm, отказоустойчевый кластер, aws, softlayer
+  * косьерж сервис
+  бекенд для чатов в реальном времени, rest api для мобильный и веб устройств, UI для администраторов
+    интеграция с платёжными системами (stripe, braintree)
+  поддержка серверной архитектуры, миграция с softlayer на aws, создание отказоустойчивого кластера, докеризация всех сервисов
+    настройка мониторинга, ELK стека, автобекапы с восстановление
   ```
 
   ```
   * технологии
-  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, sequalize.js, mongoose.js, nginx, docker, elasticsearch, mqtt
-  frontend: angular, css3, html5, javascript, bootstrap
+  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, webpack, sequelize.js, mongoose.js,
+    nginx, docker, elasticsearch, mqtt
+  frontend: angularjs, css3, html5, javascript, bootstrap
   ```
 
 #### 10.2012 - 01.2014

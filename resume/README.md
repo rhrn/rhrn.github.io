@@ -15,66 +15,118 @@
 
 ### Professional Skills
 
-  * devops: docker smarm, aws, gitlab-ci
   * platform: javascript, nodejs
   * storages: mongodb, postgres, elasticsearch, redis
-  * framewoks:
-    * js
-      * rx.js, ngrx, nuxt
-    * mobile: nativescript + angular + ngrx
-    * frontend
-      * javascript: angular, react, webpack
-      * css: bootstrap, semantic ui, vuetifyjs
+  * frameworks:
     * backend
-      * nodejs: hapi.js, express, sequalize, mongoose
+      * nodejs: express, hapi, sequelize, mongoose, nuxt
+    * frontend
+      * javascript: angular, react, webpack, vue + vuex
+      * css: bootstrap, semantic ui, vuetifyjs
     * tests:
       * js: mocha, chai, ava, jest, lab, nightwatch, selenium
+    * mobile: nativescript + angular + ngrx (for prototyping)
+    * other
+      * rx.js, ngrx
   * preprocessors:
     * pug, slm, stylus
-  * web-servers: nginx
+  * documentation
+    * openapi (swagger), puml diagrams
   * cvs: git
-  * toos: node-inspector, chrome dev tools
+  * toos: ndb, node-inspector, chrome dev tools
   * os: linux (ubuntu, alpine)
+  * devops: docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt
+
+### Interested in
+```
+machine learning, tensorflow, computer vision,
+terraform, kubernetes, k3s, nats (stan), kafka, clickhouse
+svelte, molecularjs, gunjs
+mobile development, microservices, CRDT, realtime
+```
 
 ### Work Experience
 
-#### 10.2017 - current
+#### 02.2019 - current Itorum MR
+
+  http://itorum-mr.ru/
+
+  role: Full-Stack Developer, DevOps
+
+  ```
+  * remote expert & inspection service for quality control
+  integration rest api, microserice for ldap authorization with sso, maintain webrtc architecture,
+    stream based json api, writing test with jest
+  autonomus builds via gitlab with docker, dockerizing all services, service for multiple test environments for test branches,
+    ansible scripts, docker swarm orchestration
+  ```
+
+  ```
+  * technology
+  backend: nodejs 10, express 4, sequelize 4, postgresql 9.4, redis, bulljs (queue), molecular js, typescript, jest, openapi (swagger)
+    websockets, webrtc, kurento, coturn
+  devops: docker, docker swarm, ansible, git, traefik
+  frontend: angular 5, rxjs, scss, gulp
+  ```
+
+#### 09.2018 - 02.2019 Voice Communication (Contract work)
+
+  http://lab.voice-com.ru/ 
+
+  role: Frontend, DevOps
+
+  ```
+  * video streaming service
+  mantain and develop frontend angular 6 based client for huawai tv backend, create new ui components, a lots of bundle optimization
+  setup kubernetes environment with deployments
+  ```
+
+  ```
+  * technology
+  frontend: angular 6, rxjs, ngrx, webpack 4, html, css, scss
+  devops: kubernets, gitlab, nginx
+  ```
+
+#### 10.2017 - 08.2018 Squarex
 
   http://squarex.io/
 
   role: Full-Stack Developer, DevOps
 
   ```
-  * backend, frontend
-  * blockchain: ICO platform, integration with bitcoin, ethereum, litecoin, ethereum classic
-  * devops, docker swarm, CI
+  * realstate blockchain startup
+  create control panel for investors, integration with bitcoin, ethereum, litecoin, ethereum classic
+  gitlab builds with docker, docker swarm orchestration, continuous delivery
   ```
 
   ```
   * technology
-  backend: node.js, postgres, sequalize.js, express.js, webpack, jest, nginx, docker
+  backend: node.js, postgres, sequelize.js, express.js, webpack, jest, nginx, docker
   frontend: semantic ui, react
   ```
 
-#### 05.2014 - 09.2017
+#### 05.2014 - 09.2017 Veritamo
 
   http://veritamo.com
 
-  role: Full-Stack Developer, DevOps (ubuntu, docker)
+  role: Full-Stack Developer, DevOps
 
   ```
-  * backend, frontend, integration with 3d party services
-  * devops, docker swarm, HA cluster, aws, softlayer
+  * concierge service
+  backend for multiple realtime chat api, rest api for mobile and web clients, frontend ui for adminstrating,
+    integration with 3d party services (stripe, braintree)
+  maintain servers archictecture, migration from softlayer cloud to aws, create high availability cluster, dockerizing services
+    setup monitoring, ELK stack, autobackups and restores
   ```
 
   ```
   * technology
-  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, webpack, sequalize.js, mongoose.js,
+  backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, webpack, sequelize.js, mongoose.js,
     nginx, docker, elasticsearch, mqtt
   frontend: angularjs, css3, html5, javascript, bootstrap
   ```
 
-#### 10.2012 - 02.2014
+#### 10.2012 - 02.2014 Game Insight
 
   http://www.game-insight.com Russia, Moscow
 
@@ -82,7 +134,7 @@
 
   ```
   * mobile game center based on web-view (android, ios) (-webkit)
-  refacoring, code review, pull requests, optimization, release js sdk, partial maintain android and ios sdk,
+  refactoring, code review, pull requests, optimization, release js sdk, partial maintain android and ios sdk,
   creating web sites, markup
   ```
 
