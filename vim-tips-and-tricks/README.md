@@ -117,3 +117,16 @@ set encoding=utf-8
 set fileencoding=utf-8
 set termencoding=utf-8
 ```
+
+* Install Editorconfig
+```
+mkdir -p ~/.vim/autoload
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo "
+call plug#begin('~/.vim/plugged')
+Plug 'editorconfig/editorconfig-vim'
+call plug#end()
+" > ~/.vimrc
+vim +PlugInstall editorconfig-vim +qall
+```
