@@ -3,7 +3,7 @@
   * Roman Nesterov
   * Russia, Moscow
   * birth: 16.07.1982
-  * tel: +79268888755
+  * tel: +79268888755 (Telegram, WhatsApp, Viber)
   * skype: maylog_
   * email: me@rhrn.ru
 
@@ -47,7 +47,7 @@ mobile development, microservices, CRDT, realtime
 
 ### Work Experience
 
-#### 02.2019 - current Itorum MR
+#### 02.2019 - (current) Itorum MR
 
   http://itorum-mr.ru/
 

@@ -3,7 +3,7 @@
   * Нестеров Роман
   * Россия, Москва
   * др: 16.07.1982
-  * тел: +79268888755
+  * тел: +79268888755 (Telegram, WhatsApp, Viber)
   * skype: maylog_
   * email: me@rhrn.ru
 
