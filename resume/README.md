@@ -1,9 +1,9 @@
-### Personal Information [ru](/resume-ru)
+### Personal Information
 
   * Roman Nesterov
   * Russia, Moscow
   * birth: 16.07.1982
-  * tel: +79268888755 (Telegram, WhatsApp, Viber)
+  * tel: +79268888755 (Telegram, WhatsApp)
   * skype: maylog_
   * email: me@rhrn.ru
 
@@ -15,35 +15,26 @@
 
 ### Professional Skills
 
-  * platform: javascript, nodejs
-  * storages: mongodb, postgres, elasticsearch, redis
+  * platform: javascript, nodejs, typescript
+  * storages: mongodb, postgres, elasticsearch, redis, s3
   * frameworks:
     * backend
-      * nodejs: express, hapi, sequelize, mongoose, nuxt
+      * nodejs: express, hapi, sequelize, mongoose, nuxt, molecular.js
     * frontend
-      * javascript: angular, react, webpack, vue + vuex
+      * javascript: angular, react, webpack, vue + vuex, svelte
       * css: bootstrap, semantic ui, vuetifyjs
     * tests:
-      * js: mocha, chai, ava, jest, lab, nightwatch, selenium
+      * js: mocha, chai, ava, jest, lab, nightwatch, selenium, pollyjs
     * mobile: nativescript + angular + ngrx (for prototyping)
-    * other
-      * rx.js, ngrx
+    * utils: rx.js, ngrx
   * preprocessors:
     * pug, slm, stylus
   * documentation
     * openapi (swagger), puml diagrams
   * cvs: git
-  * toos: ndb, node-inspector, chrome dev tools
+  * toos: chrome dev tools, ndb, node-inspector
   * os: linux (ubuntu, alpine)
-  * devops: docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt
-
-### Interested in
-```
-machine learning, tensorflow, computer vision,
-terraform, kubernetes, k3s, nats (stan), kafka, clickhouse
-svelte, molecularjs, gunjs
-mobile development, microservices, CRDT, realtime
-```
+  * devops: docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt, ansible, k3s (kubernetes), netdata
 
 ### Work Experience
 
@@ -55,18 +46,18 @@ mobile development, microservices, CRDT, realtime
 
   ```
   * remote expert & inspection service for quality control
-  integration rest api, microserice for ldap authorization with sso, maintain webrtc architecture,
-    stream based json api, writing test with jest
-  autonomus builds via gitlab with docker, dockerizing all services, service for multiple test environments for test branches,
-    ansible scripts, docker swarm orchestration
+  integration rest api, microservice for ldap authorization with sso, maintain webrtc architecture,
+    stream based json api, writing test with jest, websocket proxy for janus-gateway
+  autonomous builds via gitlab with docker, dockerizing all services, service for multiple test environments for test branches,
+    ansible scripts, docker swarm orchestration, monitoring, deployments
   ```
 
   ```
   * technology
-  backend: nodejs 10, express 4, sequelize 4, postgresql 9.4, redis, bulljs (queue), molecular js, typescript, jest, openapi (swagger)
-    websockets, webrtc, kurento, coturn
+  backend: nodejs 10+, express 4, sequelize 4, postgresql 9.4, redis, bulljs (queue), molecular.js, typescript, jest, openapi (swagger)
+    websockets, webrtc, kurento, coturn, janus-gateway
   devops: docker, docker swarm, ansible, git, traefik
-  frontend: angular 5, rxjs, scss, gulp
+  frontend: angular 9, svelte, rxjs, scss
   ```
 
 #### 09.2018 - 02.2019 Voice Communication (Contract work)
@@ -77,7 +68,7 @@ mobile development, microservices, CRDT, realtime
 
   ```
   * video streaming service
-  mantain and develop frontend angular 6 based client for huawai tv backend, create new ui components, a lots of bundle optimization
+  maintain and develop frontend angular 6 based client for huawai tv backend, create new ui components, a lots of bundle optimization
   setup kubernetes environment with deployments
   ```
 
@@ -94,8 +85,8 @@ mobile development, microservices, CRDT, realtime
   role: Full-Stack Developer, DevOps
 
   ```
-  * realstate blockchain startup
-  create control panel for investors, integration with bitcoin, ethereum, litecoin, ethereum classic
+  * real state blockchain startup
+  create investors blockchain platform, integration with bitcoin, ethereum, litecoin, ethereum classic
   gitlab builds with docker, docker swarm orchestration, continuous delivery
   ```
 
@@ -113,16 +104,16 @@ mobile development, microservices, CRDT, realtime
 
   ```
   * concierge service
-  backend for multiple realtime chat api, rest api for mobile and web clients, frontend ui for adminstrating,
+  backend for multiple real-time chat api, rest api for mobile and web clients, frontend ui for administrating,
     integration with 3d party services (stripe, braintree)
-  maintain servers archictecture, migration from softlayer cloud to aws, create high availability cluster, dockerizing services
+  maintain servers architecture, migration from softlayer cloud to aws, create high availability cluster, dockerizing services
     setup monitoring, ELK stack, autobackups and restores
   ```
 
   ```
   * technology
   backend: node.js, mongodb, postgres, hapi.js, slm, stylus, grunt, webpack, sequelize.js, mongoose.js,
-    nginx, docker, elasticsearch, mqtt
+    nginx, docker, elasticsearch, mqtt, s3
   frontend: angularjs, css3, html5, javascript, bootstrap
   ```
 
@@ -263,3 +254,12 @@ mobile development, microservices, CRDT, realtime
     Faculty of information technology
     Software Computer and Automated Systems
   ```
+
+### Interested in
+```
+machine learning, tensorflow, computer vision,
+terraform, kubernetes, k3s, nats (stan), kafka, clickhouse
+molecular.js, gunjs
+mobile development, microservices, CRDT, realtime
+```
+
