@@ -29,3 +29,8 @@ docker rm $(docker ps -aq -f status=exited)
 ```
 docker volume ls -qf dangling=true | xargs -r docker volume rm
 ```
+
+* Sort images by size
+```
+docker images --format "{{.ID}}\t{{.Size}}\t{{.Repository}}" | sort -k 2 -h
+```

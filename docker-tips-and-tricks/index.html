@@ -33,6 +33,9 @@ docker-machine create -d virtualbox --virtualbox-hostonly-cidr &quot;192.168.98.
 <li><p>Clear unused volumes</p>
 <pre><code>docker volume ls -qf dangling=true | xargs -r docker volume rm
 </code></pre></li>
+<li><p>Sort images by size</p>
+<pre><code>docker images --format &quot;{{.ID}}\t{{.Size}}\t{{.Repository}}&quot; | sort -k 2 -h
+</code></pre></li>
 </ul>
 
       </div>

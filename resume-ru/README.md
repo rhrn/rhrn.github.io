@@ -1,72 +1,75 @@
 ### Персональная информация [en](/resume)
 
+  ![photo](/assets/rhrn-resume-3o.png)
+
   * Нестеров Роман
   * Россия, Москва
   * др: 16.07.1982
-  * тел: +79268888755 (Telegram, WhatsApp, Viber)
+  * тел: +79268888755 (Telegram, WhatsApp)
   * skype: maylog_
   * email: me@rhrn.ru
 
   * ссылки:
-    * https://stackshare.io/rhrn
     * https://github.com/rhrn
     * https://npmjs.org/~rhrn
+    * https://stackshare.io/rhrn
     * http://rhrn.github.io
 
 ### Профессиональные навыки
 
-  * platform: javascript, nodejs
+  * platform: javascript / typescript, nodejs
   * storages: mongodb, postgres, elasticsearch, redis
   * frameworks:
     * backend
       * nodejs: express, hapi, sequelize, mongoose, nuxt
     * frontend
-      * javascript: angular, react, webpack, vue + vuex
-      * css: bootstrap, semantic ui, vuetifyjs
+      * javascript: svelte, angular, react, webpack, vue + vuex
+      * css: bootstrap, semantic ui, vuetifyjs, material
     * tests:
-      * js: mocha, chai, ava, jest, lab, nightwatch, selenium
-    * mobile: nativescript + angular + ngrx (for prototyping)
+      * js: jest, pollyjs, puppeteer, mocha, chai, ava, lab, nightwatch, selenium
+    * mobile: nativescript + angular + ngrx (for prototyping), webrtc
     * other
       * rx.js, ngrx
   * preprocessors:
-    * pug, slm, stylus
+    * pug, stylus
   * documentation
     * openapi (swagger), puml diagrams
   * cvs: git
-  * toos: ndb, node-inspector, chrome dev tools
+  * toos: chrome dev tools
   * os: linux (ubuntu, alpine)
-  * devops: docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt
+  * devops: ansible, docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt, k3s (kubernetes), netdata
 
-### Интересуюсь
+### О cебе
 ```
-machine learning, tensorflow, computer vision,
-terraform, kubernetes, k3s, nats (stan), kafka, clickhouse
-svelte, molecularjs, gunjs
-mobile development, microservices, CRDT, realtime
+Занимаюсь разработкой IT проектов более 15 лет, с участием преимущественно стартапах.
+Технологии для меня не только работа но и хобби.
+Нравится заниматься исследовательской работой, собирать оптимальные стеки технологии для решения задач.
+В разработке нравятся подходы Scrum, BDD/TDD
 ```
 
 ### Опыт работы
 
 #### 02.2019 - (на текущий момент) Itorum MR
 
-  http://itorum-mr.ru/
+  https://itorummr.ru/
 
-  role: Full-Stack Developer, DevOps
+  role: Fullstack, Devops, RnD, Solution Architect
 
   ```
-  * сервис удалённого эксперта и инспектирования
-  интеграционное rest api, микросервис для авторизации через ldap c sso, поддержка и доработка webrtc архитектуры,
+  * сервис удалённого эксперта и инспектирования c тех картами
+  разработка видео/аудио звонков (аналог zoom) на базе janus gateway
+  интеграционное rest api, микросервис авторизации ldap c sso, поддержка и доработка webrtc архитектуры,
     потоковое json api, тесты c jest
   автоматические сборки через gitlab c docker, dockerizing всех сервисов, сервис для тестирования ветвей кода
-    ansible скрипты, docker swarm оркестрация
+    ansible playbooks, docker swarm оркестрация, разворачивание продуктов на инфраструктуре заказчика
   ```
 
   ```
   * технологии
-  backend: nodejs 10, express 4, sequelize 4, postgresql 9.4, redis, bulljs (queue), molecular js, typescript, jest, openapi (swagger)
-    websockets, webrtc, kurento, coturn
+  backend: uWebSockets.js, nodejs 12+, express, sequelize, postgresql, redis, bulljs (queue), molecular js, typescript, jest, openapi (swagger)
+    websockets, webrtc, kurento, coturn, janus gateway
+  frontend: svelte 3, angular 9+, rxjs, scss
   devops: docker, docker swarm, ansible, git, traefik
-  frontend: angular 5, rxjs, scss, gulp
   ```
 
 #### 09.2018 - 02.2019 Voice Communication (Контрактная работа)
@@ -76,9 +79,9 @@ mobile development, microservices, CRDT, realtime
   role: Frontend, DevOps
 
   ```
-  * сервис видеостриминга
-  поддержка и разработка фронтенда на базе angular 6 для huawai tv, созданиме новых ui компонентов, много оптимизации бандла приложения
-  setup kubernetes environemt with deployments
+  * сервис видео стриминга (онлайн кинотеатр)
+  поддержка и разработка фронтенда на базе angular 6 для huawai tv, создание новых ui компонентов, оптимизации сборки и приложения
+  настройка kubernetes и завёртки на сервера
   ```
 
   ```
@@ -96,7 +99,8 @@ mobile development, microservices, CRDT, realtime
   ```
   * блокчейн стартап в сфере недвижимости
   создание личного кабинета в для инвестора, интеграция с сетями bitcoin, ethereum, litecoin, ethereum classic
-  gitlab builds with docker, docker swarm orchestration, continuous delivery
+  написание автотестов
+  настройка gitlab cicd, docker swarm
   ```
 
   ```
@@ -107,13 +111,13 @@ mobile development, microservices, CRDT, realtime
 
 #### 05.2014 - 09.2017 Veritamo
 
-  http://veritamo.com
+  https://veritamo.com
 
   role: Full-Stack Developer, DevOps
 
   ```
-  * косьерж сервис
-  бекенд для чатов в реальном времени, rest api для мобильный и веб устройств, UI для администраторов
+  * Баклер (консьерж) сервис
+  бекенд для чатов в реальном времени, rest api для мобильных и веб устройств, graphql api, UI для администраторов
     интеграция с платёжными системами (stripe, braintree)
   поддержка серверной архитектуры, миграция с softlayer на aws, создание отказоустойчивого кластера, докеризация всех сервисов
     настройка мониторинга, ELK стека, автобекапы с восстановление
@@ -128,14 +132,14 @@ mobile development, microservices, CRDT, realtime
 
 #### 10.2012 - 01.2014
 
-  http://www.game-insight.com Россия, Москва
+  https://www.game-insight.com Россия, Москва
 
   роль: Full-Stack Developer
 
   ```text
   * игровой центр для мобильных устройств основанный на web-view (android, ios) (-webkit)
-  рефакоринг, ревью кода, пулл реквесты (github), оптимизация, релиз js sdk, частичная поддержка android and ios sdk,
-  создание и поддержка веб ресурсов, вёрстка
+  рефакторинг, ревью кода, пулл реквесты (github), оптимизация, релиз js sdk, частичная поддержка android и ios sdk,
+  создание и поддержка веб сервисов
   ```
 
   ```text
@@ -153,7 +157,7 @@ mobile development, microservices, CRDT, realtime
   ```text
   * агрегатор служб доставки для интернет магазинов
   разработка стартапа "c нуля",
-  разработка архитeктуры, rest api, frontend + backend
+  разработка архитектуры, rest api, frontend + backend
   настройка linux серверов
   постановка задач для команды (4 разработчика)
   ```
@@ -180,12 +184,12 @@ mobile development, microservices, CRDT, realtime
 
 #### 07.2010 - 11.2012 OOO Grupper
 
-  http://boombate.com Россия, Москва
+  https://boombate.com Россия, Москва
 
   должность: Старший разработчик
 
   ```text
-  * бесплатные купоны
+  * Купоный сервис
   разработка стартапа "c нуля"
   разработка frontend + backend
   задачи для команды (2 разработчика)
@@ -208,7 +212,7 @@ mobile development, microservices, CRDT, realtime
 
   ```text
   * социальная сеть для индустрии моды
-  разработка социального функционала fontend + backend
+  разработка функционала социальной сети, fontend + backend
   интеграция с livejournal
   ```
 
@@ -232,7 +236,7 @@ mobile development, microservices, CRDT, realtime
 
   ```text
   * технологии
-  backend: php, postgesql, apache, cakephp, freebsd
+  backend: php, postgresql, apache, cakephp, freebsd
   frontend: jquery, javascript, css, html
   ```
 
@@ -266,3 +270,10 @@ mobile development, microservices, CRDT, realtime
     Факультет - Информационных Технологий
     Программное обеспечение вычислительной техники и автоматизированных систем
   ```
+
+### Интересуюсь технологиями
+```
+svelte/sapper, rest api, typescript, rxjs, uWebSockets, graphql, gunjs, moleculerjs,
+nuts, kaffka, yugabyte, cassandra, foundationdb, clickhouse
+kubernetes, machine Learning, computer vision, blockchain, distributed Systems
+```

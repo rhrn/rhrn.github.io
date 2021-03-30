@@ -1,5 +1,7 @@
 ### Personal Information
 
+  ![photo](/assets/rhrn-resume-3o.png)
+
   * Roman Nesterov
   * Russia, Moscow
   * birth: 16.07.1982
@@ -8,56 +10,66 @@
   * email: me@rhrn.ru
 
   * links:
-    * https://stackshare.io/rhrn
     * https://github.com/rhrn
     * https://npmjs.org/~rhrn
-    * http://rhrn.github.io
+    * https://stackshare.io/rhrn
+    * https://rhrn.github.io
 
 ### Professional Skills
 
-  * platform: javascript, nodejs, typescript
-  * storages: mongodb, postgres, elasticsearch, redis, s3
+  * platform: javascript / typescript, nodejs
+  * storages: mongodb, postgres, elasticsearch, redis
   * frameworks:
     * backend
-      * nodejs: express, hapi, sequelize, mongoose, nuxt, molecular.js
+      * nodejs: express, hapi, sequelize, mongoose, nuxt
     * frontend
-      * javascript: angular, react, webpack, vue + vuex, svelte
-      * css: bootstrap, semantic ui, vuetifyjs
+      * javascript: svelte, angular, react, webpack, vue + vuex
+      * css: bootstrap, semantic ui, vuetifyjs, material
     * tests:
-      * js: mocha, chai, ava, jest, lab, nightwatch, selenium, pollyjs
-    * mobile: nativescript + angular + ngrx (for prototyping)
-    * utils: rx.js, ngrx
+      * js: jest, pollyjs, puppeteer, mocha, chai, ava, lab, nightwatch, selenium
+    * mobile: nativescript + angular + ngrx (for prototyping), webrtc
+    * other
+      * rx.js, ngrx
   * preprocessors:
-    * pug, slm, stylus
+    * pug, stylus
   * documentation
     * openapi (swagger), puml diagrams
   * cvs: git
-  * toos: chrome dev tools, ndb, node-inspector
+  * toos: chrome dev tools
   * os: linux (ubuntu, alpine)
-  * devops: docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt, ansible, k3s (kubernetes), netdata
+  * devops: ansible, docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt, k3s (kubernetes), netdata
+
+### Bio
+```
+I have been developing IT projects for over 15 year, with the participation of mainly startups.
+Technology for me is not only a job but also a hobby.
+I like doing research work, collecting optimal technology stacks for solving problems.
+I like Scrum, BDD/TDD approaches in development.
+```
 
 ### Work Experience
 
 #### 02.2019 - (current) Itorum MR
 
-  http://itorum-mr.ru/
+  https://itorummr.ru/
 
-  role: Full-Stack Developer, DevOps
+  role: FullStack Developer, DevOps, RnD, Architect Solution
 
   ```
   * remote expert & inspection service for quality control
+  video/audio calls (like zoom) based on janus gateway
   integration rest api, microservice for ldap authorization with sso, maintain webrtc architecture,
-    stream based json api, writing test with jest, websocket proxy for janus-gateway
+    stream based json api, writing test with jest
   autonomous builds via gitlab with docker, dockerizing all services, service for multiple test environments for test branches,
     ansible scripts, docker swarm orchestration, monitoring, deployments
   ```
 
   ```
   * technology
-  backend: nodejs 10+, express 4, sequelize 4, postgresql 9.4, redis, bulljs (queue), molecular.js, typescript, jest, openapi (swagger)
-    websockets, webrtc, kurento, coturn, janus-gateway
+  backend: nodejs 12+, express, sequelize 4+, postgresql, redis, bulljs (queue), molecular.js, typescript, jest, openapi (swagger)
+    websockets, webrtc, kurento, coturn, janus gateway
+  frontend: angular 9+, svelte, rxjs, scss
   devops: docker, docker swarm, ansible, git, traefik
-  frontend: angular 9, svelte, rxjs, scss
   ```
 
 #### 09.2018 - 02.2019 Voice Communication (Contract work)
@@ -67,7 +79,7 @@
   role: Frontend, DevOps
 
   ```
-  * video streaming service
+  * Frontend for video streaming service
   maintain and develop frontend angular 6 based client for huawai tv backend, create new ui components, a lots of bundle optimization
   setup kubernetes environment with deployments
   ```
@@ -82,7 +94,7 @@
 
   http://squarex.io/
 
-  role: Full-Stack Developer, DevOps
+  role: FullStack Developer, DevOps
 
   ```
   * real state blockchain startup
@@ -100,12 +112,12 @@
 
   http://veritamo.com
 
-  role: Full-Stack Developer, DevOps
+  role: FullStack Developer, DevOps
 
   ```
   * concierge service
   backend for multiple real-time chat api, rest api for mobile and web clients, frontend ui for administrating,
-    integration with 3d party services (stripe, braintree)
+    integration with 3d party payments, services (stripe, braintree)
   maintain servers architecture, migration from softlayer cloud to aws, create high availability cluster, dockerizing services
     setup monitoring, ELK stack, autobackups and restores
   ```
@@ -121,12 +133,12 @@
 
   http://www.game-insight.com Russia, Moscow
 
-  role: Full-Stack Developer
+  role: FullStack Developer
 
   ```
   * mobile game center based on web-view (android, ios) (-webkit)
   refactoring, code review, pull requests, optimization, release js sdk, partial maintain android and ios sdk,
-  creating web sites, markup
+  creating web services
   ```
 
   ```
@@ -257,9 +269,8 @@
 
 ### Interested in
 ```
-machine learning, tensorflow, computer vision,
-terraform, kubernetes, k3s, nats (stan), kafka, clickhouse
-molecular.js, gunjs
-mobile development, microservices, CRDT, realtime
+svelte/sapper, rest api, typescript, rxjs, uWebSockets, graphql, gunjs, moleculerjs,
+nuts, kaffka, yugabyte, cassandra, foundationdb, clickhouse
+kubernetes, machine Learning, computer vision, blockchain, distributed Systems
 ```
 
