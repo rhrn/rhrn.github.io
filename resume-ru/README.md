@@ -18,13 +18,14 @@
 ### Профессиональные навыки
 
   * platform: javascript / typescript, nodejs
-  * storages: mongodb, postgres, elasticsearch, redis
+  * storages: mongodb, postgres, kafka, redis, minio
+  * queue: bulljs
   * frameworks:
     * backend
-      * nodejs: express, hapi, sequelize, mongoose, nuxt
+      * nodejs: nanoexpress, express, hapi, prisma, sequelize, mongoose, nuxt, uWebSockets.js
     * frontend
-      * javascript: svelte, angular, react, webpack, vue + vuex
-      * css: bootstrap, semantic ui, vuetifyjs, material
+      * javascript: nuxt3, vue3, svelte, angular, react, webpack, vue + vuex, echarts
+      * css: naive-ui, iview, bootstrap, semantic ui, vuetifyjs, material
     * tests:
       * js: jest, pollyjs, puppeteer, mocha, chai, ava, lab, nightwatch, selenium
     * mobile: nativescript + angular + ngrx (for prototyping), webrtc
@@ -33,23 +34,42 @@
   * preprocessors:
     * pug, stylus
   * documentation
-    * openapi (swagger), puml diagrams
+    * openapi (swagger), asyncapi, plantuml diagrams, diagrams (mingrammer), mermaid
   * cvs: git
-  * toos: chrome dev tools
+  * debug: chrome dev tools
   * os: linux (ubuntu, alpine)
-  * devops: ansible, docker swarm, aws, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt, k3s (kubernetes), netdata
+  * devops: ansible, docker swarm, gitlab-ci, traefik, ubuntu, alpine, nginx, letsencrypt, k3s (kubernetes), netdata
 
 ### О cебе
 ```
-Занимаюсь разработкой IT проектов более 15 лет, с участием преимущественно стартапах.
-Технологии для меня не только работа но и хобби.
-Нравится заниматься исследовательской работой, собирать оптимальные стеки технологии для решения задач.
-В разработке нравятся подходы Scrum, BDD/TDD
+Занимаюсь разработкой IT проектов более 15 лет, с участием преимущественно в стартапах.
+Люблю заниматься разработкой продуктов, собирать оптимальные стеки технологий, подбирать архитектуру, исследовать новые инструменты.
+В разработке нравятся подходы Scrum, BDD/TDD.
 ```
 
 ### Опыт работы
 
-#### 02.2019 - (на текущий момент) Itorum MR
+#### 05.2021 - (на текущий момент) Bequant Pro
+
+  https://bequant.pro/
+
+  role: FullStack Developer, DevOps
+
+  ```
+  * единый брокерский агент для бирж
+  разработка сервисов для экосистемы, такие как агрегация трейдов, P&L, api для цен, пуллеры данных...
+  создание инструментов для анализа и контроля данных
+  развёртывание и монитроинг сервисов
+  ```
+
+  ```
+  * технологии
+  backend: typescript, nodejs 14+, uWebSockets.js, nanoexpress, express, prisma, postgresql, redis, bulljs (queue), kafka, nats, rxjs, jest, openapi (swagger), ccxt
+  frontend: nuxt3, vue3, css, echarts, naive-ui, pinia
+  devops: docker, gitlab-cli
+  ```
+
+#### 02.2019 - 05.2021 Itorum MR
 
   https://itorummr.ru/
 
@@ -273,7 +293,7 @@
 
 ### Интересуюсь технологиями
 ```
-svelte/sapper, rest api, typescript, rxjs, uWebSockets, graphql, gunjs, moleculerjs,
-nuts, kaffka, yugabyte, cassandra, foundationdb, clickhouse
-kubernetes, machine Learning, computer vision, blockchain, distributed Systems
+nats, kafka / redpanda, cassandra / scylladb, foundationdb, tikv, surrealdb, fluvio
+distributed systems, web3, rust, solana, blockchain, gunjs
+wasm, kubernetes
 ```
